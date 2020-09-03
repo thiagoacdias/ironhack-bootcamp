@@ -1,0 +1,40 @@
+CREATE TABLE IF NOT EXISTS Cars (
+	car_ID int NOT NULL,
+	VIN VARCHAR(17) NOT NULL,
+	Manufacturer VARCHAR(20) NOT NULL,
+	Model VARCHAR(25) NOT NULL,
+	Year int NOT NULL,
+	Color VARCHAR(20)
+	);
+
+CREATE TABLE IF NOT EXISTS Customer (
+	customer_ID int NOT NULL, 
+	name VARCHAR(50) NOT NULL,
+	phone VARCHAR(30) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	address VARCHAR (100) NOT NULL,
+	city VARCHAR(20),
+	state VARCHAR(20),
+	country VARCHAR(20),
+	postal VARCHAR(10) NOT NULL
+	);
+	
+	
+CREATE TABLE IF NOT EXISTS Staff (
+	staff_id int NOT NULL,
+	name VARCHAR(50) NOT NULL,
+	store_name VARCHAR(20) NOT NULL
+	);
+
+CREATE TABLE IF NOT EXISTS Invoice (
+	invoice_number int NOT NULL,
+	date DATE NOT NULL,
+	car int NOT NULL,
+	customer int NOT NULL,
+	Sales_person int NOT NULL
+	);
+
+DROP TABLE IF EXISTS Cars;
+DROP TABLE IF EXISTS Customer;
+DROP TABLE IF EXISTS Staff;
+DROP TABLE IF EXISTS Invoice;

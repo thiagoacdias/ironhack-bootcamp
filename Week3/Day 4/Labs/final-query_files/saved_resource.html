@@ -1,0 +1,3027 @@
+<!DOCTYPE html>
+<!-- saved from url=(0101)http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&sgid=1&sid=1&server_type=pg&did=16393 -->
+<html class="no-js" wtx-context="A974B515-FE12-426C-83FA-275FC48AD253"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>dataft_202008/postgres@PostgreSQL 12</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- To set pgAdmin4 shortcut icon in browser -->
+    <link rel="shortcut icon" href="http://127.0.0.1:53964/favicon.ico?ver=42400">
+
+    <!-- Base template stylesheets -->
+    <link type="text/css" rel="stylesheet" href="./style.css">
+    <link type="text/css" rel="stylesheet" href="./pgadmin.style.css">
+    <link type="text/css" rel="stylesheet" href="./pgadmin.css">
+
+     <!--View specified stylesheets-->
+    
+    <script>
+        /* This is used to change publicPath of webpack at runtime */
+        window.getChunkURL = function() {
+            return "/static/js/generated/";
+        };
+    </script>
+    <!-- Base template scripts -->
+    <script type="text/javascript" src="./require.min.js.download"></script>
+    <script type="text/javascript">
+            require.config({
+                baseUrl: '',
+                urlArgs: 'ver=42400',
+                waitSeconds: 0,
+                shim: {},
+                paths: {
+                    sources: "/static/js",
+                    datagrid: "/static/js/generated/datagrid",
+                    sqleditor: "/static/js/generated/sqleditor",
+                    'pgadmin.browser.utils': "/browser/" + "js/utils",
+                    'pgadmin.browser.endpoints': "/browser/" + "js/endpoints",
+                    'pgadmin.browser.messages': "/browser/" + "js/messages",
+                    'pgadmin.server.supported_servers': "/browser/" + "server/supported_servers",
+                    'pgadmin.user_management.current_user': "/user_management/" + "current_user",
+                    'translations': "/tools/" + "translations"
+                }
+            });
+
+    </script>
+
+    <!-- View specified scripts -->
+    <script type="text/javascript" src="./vendor.main.js.download"></script>
+    <script type="text/javascript" src="./vendor.others.js.download"></script>
+    <script type="text/javascript" src="./pgadmin_commons.js.download"></script>
+
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/browser_nodes" src="./browser_nodes.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/codemirror" src="./codemirror.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/slickgrid" src="./slickgrid.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/generated/sqleditor" src="./sqleditor.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="translations" src="./translations.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.endpoints" src="./endpoints.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.utils" src="./utils.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.user_management.current_user" src="./current_user.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.browser.messages" src="./messages.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pgadmin.server.supported_servers" src="./supported_servers.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/gettext" src="./gettext.js.download"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="sources/pgadmin" src="./pgadmin.js.download"></script><link id="wcTheme" rel="stylesheet" type="text/css" href="./webcabin.overrides(1).css"><style type="text/css" rel="stylesheet">.slickgrid_729438 .slick-header-column { left: 1000px; } .slickgrid_729438 .slick-top-panel { height:25px; } .slickgrid_729438 .slick-preheader-panel { height:25px; } .slickgrid_729438 .slick-headerrow-columns { height:25px; } .slickgrid_729438 .slick-footerrow-columns { height:25px; } .slickgrid_729438 .slick-cell { height:25px; } .slickgrid_729438 .slick-row { height:25px; } .slickgrid_729438 .l0 { } .slickgrid_729438 .r0 { } .slickgrid_729438 .l1 { } .slickgrid_729438 .r1 { } .slickgrid_729438 .l2 { } .slickgrid_729438 .r2 { }</style></head>
+<body tabindex="0" class="wcDesktop wcLockPreventDocking">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<style>
+    body {padding: 0px;}
+    </style>
+<div id="main-editor_panel">
+    <div class="sql-editor">
+        <div id="btn-toolbar" class="editor-toolbar" role="toolbar" aria-label="">
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-load-file" type="button" class="btn btn-sm btn-primary-icon btn-load-file" title="Open File (accesskey + O)" accesskey="O" tabindex="0" aria-label="Open File (accesskey + O)">
+                    <i class="fa fa-folder-open-o sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-save-file" type="button" class="btn btn-sm btn-primary-icon" title="Save File (accesskey + S)" accesskey="S" aria-label="Save File (accesskey + S)">
+                    <i class="fa fa-floppy-o sql-icon-lg" aria-hidden="true" tabindex="0" role="img"></i>
+                </button>
+                <button id="btn-file-menu-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-file-menu-save" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0" style="display: block;">
+                            <span>Save</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-file-menu-save-as" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span>Save As</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-save-data" type="button" class="btn btn-sm btn-primary-icon" title="Save Data Changes (F6)" accesskey="" tabindex="0" disabled="" aria-label="Save Data Changes (F6)">
+                    <i class="pg-font-icon icon-save-data-changes sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-find" type="button" class="btn btn-sm btn-primary-icon" aria-label="Find" title="Find (Ctrl/Cmd+F)">
+                    <i class="fa fa-search sql-icon-lg" aria-hidden="true" tabindex="0" role="img"></i>
+                </button>
+                <button id="btn-find-menu-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Find (accesskey + N)" accesskey="N" tabindex="0" aria-label="Find (accesskey + N)">
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-find" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span> Find                                  (Ctrl+F)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-find-next" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span> Find Next                                  (Ctrl+G)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-find-previous" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span> Find Previous                                  (Ctrl+Shift+G)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-find-persistent" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span>Persistent Find</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-replace" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span> Replace                                  (Ctrl+Shift+F)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-replace-all" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span>Replace All</span>
+                        </a>
+                    </li>
+                    <li class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item" id="btn-find-menu-jump" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span>Jump (Alt+G)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-copy-row" type="button" class="btn btn-sm btn-primary-icon" title="Copy (accesskey + C)" accesskey="C" tabindex="0" disabled="" aria-label="Copy (accesskey + C)">
+                    <i class="fa fa-files-o sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-copy-row-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-copy-with-header" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <i class="copy-with-header fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Copy with headers </span>
+                        </a>
+                    </li>
+                </ul>
+                <button id="btn-paste-row" type="button" class="btn btn-sm btn-primary-icon" title="Paste (accesskey + P)" accesskey="P" tabindex="0" disabled="" aria-label="Paste (accesskey + P)">
+                    <i class="fa fa-clipboard sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-delete-row" type="button" class="btn btn-sm btn-primary-icon" title="Delete (accesskey + D)" accesskey="D" tabindex="0" disabled="" aria-label="Delete (accesskey + D)">
+                    <i class="fa fa-trash sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-edit-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Edit" title="Edit" tabindex="0">
+                    <i class="fa fa-pencil-square-o sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-indent-code" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span> Indent Selection (Tab) </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-unindent-code" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span> Unindent Selection (Shift+Tab) </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-comment-line" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span> Inline Comment Selection                                  (Ctrl+/)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-uncomment-line" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span> Inline Uncomment Selection                                  (Ctrl+.)</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-toggle-comment-block" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span> Block Comment/Uncomment Selection                                  (Shift+Ctrl+/)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-filter" type="button" class="btn btn-secondary" title="Filter (accesskey + F)" accesskey="F" tabindex="0" disabled="" aria-label="Filter (accesskey + F)">
+                    <i class="fa fa-filter sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-filter-dropdown" type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Filter options (accesskey + I)" accesskey="I" disabled="" tabindex="0" aria-label="Filter options (accesskey + I)">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <li>
+                        <a id="btn-filter-menu" class="dropdown-item" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">Sort/Filter</a>
+                    </li>
+                    <li>
+                        <a id="btn-include-filter" class="dropdown-item" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">Filter by Selection</a>
+                    </li>
+                    <li>
+                        <a id="btn-exclude-filter" class="dropdown-item" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">Exclude by Selection</a>
+                    </li>
+                    <li>
+                        <a id="btn-remove-filter" class="dropdown-item" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">Remove Sort/Filter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <select id="btn-rows-limit" class="limit form-control form-control-sm" disabled="" title="Rows limit (accesskey + R)" accesskey="R" tabindex="0" wtx-context="0C6ED8A4-BB5B-4DB3-8BF1-29683FDEC3DB" aria-label="Rows limit (accesskey + R)">
+                    <option value="-1">No limit</option>
+                    <option value="1000">1000 rows</option>
+                    <option value="500">500 rows</option>
+                    <option value="100">100 rows</option>
+                </select>
+            </div>
+
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-cancel-query" type="button" class="btn btn-sm btn-primary-icon" title="Cancel query (accesskey + Q)" accesskey="Q" tabindex="0" aria-label="Cancel query (accesskey + Q)" disabled="">
+                    <i class="fa fa-stop sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-flash" data-test-selector="execute-refresh-button" type="button" class="btn btn-sm btn-primary-icon" style="width: 32px;" title="Execute/Refresh (F5)" tabindex="0" data-click-counter="0" aria-label="Execute/Refresh (F5)">
+                    <i class="fa fa-play sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-query-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" accesskey="X" title="Execute options (accesskey + X)" tabindex="0" aria-label="Execute options (accesskey + X)">
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-auto-commit" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <i class="auto-commit fa fa-check" aria-hidden="true" role="img"></i>
+                            <span> Auto commit? </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-auto-rollback" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <i class="auto-rollback fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Auto rollback? </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-explain" type="button" class="btn btn-sm btn-primary-icon" title="Explain (F7)" accesskey="" tabindex="0" aria-label="Explain (F7)">
+                    <i class="fa fa-hand-pointer-o sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-explain-analyze" type="button" class="btn btn-sm btn-primary-icon" title="Explain Analyze (Shift+F7)" accesskey="" aria-label="Explain Analyze (Shift+F7)">
+                    <i class="fa fa-list-alt sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-explain-options-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-explain-verbose" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <i class="explain-verbose fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Verbose </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-explain-costs" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <i class="explain-costs fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Costs </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-explain-buffers" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <i class="explain-buffers fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Buffers </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-explain-timing" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <i class="explain-timing fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Timing </span>
+                        </a>
+                    </li>
+                    <li data-min-ver="100000">
+                        <a class="dropdown-item" id="btn-explain-summary" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <i class="explain-summary fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Summary </span>
+                        </a>
+                    </li>
+                    <li data-min-ver="120000">
+                        <a class="dropdown-item" id="btn-explain-settings" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <i class="explain-settings fa fa-check visibility-hidden" aria-hidden="true" role="img"></i>
+                            <span> Settings </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-commit" type="button" class="btn btn-sm btn-primary-icon" title="Commit (Shift+Ctrl+M)" accesskey="" tabindex="0" disabled="" aria-label="Commit (Shift+Ctrl+M)">
+                    <i class="pg-font-icon icon-commit sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <button id="btn-rollback" type="button" class="btn btn-sm btn-primary-icon" title="Rollback (Shift+Ctrl+R)" tabindex="0" disabled="" aria-label="Rollback (Shift+Ctrl+R)">
+                    <i class="pg-font-icon icon-rollback sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+            </div>
+            <div class="btn-group mr-1" role="group" aria-label="">
+                <button id="btn-clear-dropdown" type="button" class="btn btn-sm btn-primary-icon dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Clear (accesskey + L)" accesskey="L" tabindex="0" aria-label="Clear (accesskey + L)">
+                    <i class="fa fa-eraser sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" id="btn-clear" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span> Clear Query Window </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" id="btn-clear-history" href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="0">
+                            <span> Clear History </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-group" role="group" aria-label="">
+                <button id="btn-download" type="button" class="btn btn-sm btn-primary-icon" title="Download as CSV/TXT (F8)" tabindex="0" aria-label="Download as CSV/TXT (F8)">
+                    <i class="fa fa-download sql-icon-lg" aria-hidden="true" role="img"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="connection_status_wrapper d-flex">
+            <div id="btn-conn-status" role="status" class="connection_status d-flex justify-content-center align-items-center" data-container="body" data-toggle="popover" data-placement="bottom" data-content="The session is idle and there is no current transaction." data-panel-visible="visible" accesskey="T" tabindex="0" data-original-title="" title="">
+                <i class="pg-font-icon icon-query-tool-connected" aria-hidden="true" title="Connection status (click for details) (accesskey + T)" role="img">
+                </i>
+            </div>
+            <div class="editor-title" style="background-color: ; color: ;">dataft_202008/postgres@PostgreSQL 12</div>
+        </div>
+        <div id="editor-panel" tabindex="0">
+            <div id="fetching_data" class="pg-sp-container sql-editor-busy-fetching d-none">
+                <div class="pg-sp-content">
+                    <div class="row">
+                        <div class="col-12 pg-sp-icon sql-editor-busy-icon"></div>
+                    </div>
+                    <div class="row"><div class="col-12 pg-sp-text sql-editor-busy-text">Loading data from the database server and rendering...</div></div>
+                </div>
+            </div>
+        <div class="wcDocker"><div class="wcDockerTransition"></div><div class="wcLayoutPane" style="height: 312.75px; top: 0px; left: 0px; right: 0px;"><div class="wcLayoutPane" style="width: 926.25px; left: 0px; top: 0px; bottom: 0px;"><div class="wcFrame wcWide wcTall"><div class="wcFrameTitleBar wcTabTop" style="width: 926.25px;"><div class="wcTabScroller" style="left: 0px;"><div class="wcPanelTab wcPanelTabActive" id="0"><div><a href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="-1" class="panel-link-heading">Query Editor</a></div></div><div class="wcPanelTab" id="1"><div><a href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="-1" class="panel-link-heading">Query History</a></div></div></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px; right: 0px;"></div></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px;"><div class="wcFrameButton" title="Close the currently active panel tab" aria-label="Close panel" tabindex="0" style="display: none;"><div class="fa fa-close"></div></div><div class="wcFrameButton" title="Collapse the active panel" style="display: none;"><div class="fa fa-download"></div>C</div></div><div class="wcFrameCenter wcPanelBackground wcScrollableX wcScrollableY" style="left: 0px; right: 0px; bottom: 0px;"><div class="wcPanelTabContent" id="0"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div id="output-panel" tabindex="0"><textarea id="sql_query_tool" tabindex="-1" style="display: none;"></textarea><div class="CodeMirror cm-s-default CodeMirror-simplescroll" style="font-size: 1em;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 87.2px; left: 331.6px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;" aria-label="SQL editor" tabindex="0"></textarea></div><div class="CodeMirror-simplescroll-horizontal" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-simplescroll-vertical" cm-not-content="true" style="display: none;"><div></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 42px; margin-bottom: -16px; border-right-width: 34px; min-height: 112px; min-width: 628.6px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like">x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 289.6px; top: 83.2px; height: 20.8px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">CREATE</span> <span class="cm-keyword">TABLE</span> <span class="cm-keyword">IF</span> <span class="cm-keyword">NOT</span> <span class="cm-keyword">EXISTS</span> table_example <span class="cm-bracket">(</span>nome <span class="cm-builtin">VARCHAR</span><span class="cm-bracket">(</span><span class="cm-number">50</span><span class="cm-bracket">)</span><span class="cm-punctuation">,</span> nota <span class="cm-builtin">SMALLINT</span><span class="cm-bracket">)</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">SELECT</span> <span class="cm-operator">*</span> <span class="cm-keyword">FROM</span> table_example</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -42px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">DROP</span> <span class="cm-keyword">TABLE</span> <span class="cm-keyword">IF</span> <span class="cm-keyword">EXISTS</span> table_example</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 34px; width: 1px; border-bottom: 0px solid transparent; top: 112px;"></div><div class="CodeMirror-gutters" style="height: 146px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div></div></div></div></div></div></td></tr></tbody></table></div><div class="wcPanelTabContent wcPanelTabContentHidden" id="1"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div id="history_grid" class="sql-editor-history-container d-flex" tabindex="0"><div style="width: calc(50% - 0.5px);"><div class="toggle-and-history-container">
+            <div class="query-history-toggle">
+                <label class="control-label">
+                    Show queries generated internally by pgAdmin?
+                </label>
+                <div class="toggle btn btn-success btn-xs quick" data-toggle="toggle" style="width: 0px; height: 0px;"><input id="generated-queries-toggle" type="checkbox" class="pgadmin-controls" data-style="quick" data-size="mini" data-on="Yes" data-off="No" data-onstyle="success" data-offstyle="ternary" checked="" wtx-context="3E989515-37FF-43D3-9AF7-425CE51D2A19"><div class="toggle-group"><label class="btn btn-success btn-xs toggle-on">Yes</label><label class="btn btn-ternary btn-xs toggle-off">No</label><span class="toggle-handle btn btn-light btn-xs"></span></div></div>
+            </div>
+            <div id="query_list" class="query-history" tabindex="0"><div class="query-group" data-key="2020 09 02">
+            <div class="date-label">Today - 02/09/2020</div>
+            <ul class="query-entries"><li class="list-item selected" tabindex="0" data-key="15:45:43">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  DROP TABLE IF EXISTS table_example
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:45:43</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:45:42">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  DROP TABLE IF EXISTS table_example
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:45:42</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:45:39">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  SELECT * FROM table_example
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:45:39</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:45:37">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  CREATE TABLE IF NOT EXISTS table_example (nome VARCHAR(50), nota SMALLINT)
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:45:37</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:45:33">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  SELECT * FROM table_example
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:45:33</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:45:30">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  DROP TABLE IF EXISTS table_example
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:45:30</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:45:06">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  CREATE TABLE table_example (nome VARCHAR(50), nota SMALLINT)
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:45:06</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:45:04">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  DROP TABLE table_example
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:45:04</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:45:01">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  DROP TABLE table_example
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:45:01</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:44:58">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  SELECT * FROM table_example
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:44:58</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:44:54">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  CREATE TABLE table_example (nome VARCHAR(50), nota SMALLINT)
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:44:54</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:44:51">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  DROP TABLE table_example
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:44:51</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:44:49">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  SELECT * FROM table_example
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:44:49</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:41:31">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  SELECT *
+FROM
+table_example
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:41:31</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:41:06">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  CREATE TABLE table_example (nome VARCHAR(50), nota SMALLINT);
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:41:06</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="15:39:47">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  CREATE TABLE example_table (nome VARCHAR(50), nota SMALLINT);
+              </div>
+              <div class="other-info">
+              <div class="timestamp">15:39:47</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:23:09">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  --
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.1
+-- Dumped by pg_dump version 12.1
+
+-- Started on 2020-02-26 00:01:49 -03
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3171 (class 1262 OID 16500)
+-- Name: sql_queries; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+--
+-- TOC entry 207 (class 1259 OID 16547)
+-- Name: buildings; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.buildings (
+    building_id bigint,
+    building_name text,
+    height bigint
+);
+
+
+ALTER TABLE public.buildings OWNER TO postgres;
+
+--
+-- TOC entry 204 (class 1259 OID 16522)
+-- Name: cities; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.cities (
+    "City" text,
+    "Country" text,
+    "Population" bigint,
+    "Latitude" double precision,
+    "Longitude" double precision
+);
+
+
+ALTER TABLE public.cities OWNER TO postgres;
+
+--
+-- TOC entry 205 (class 1259 OID 16528)
+-- Name: employees; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.employees (
+    role text,
+    name text,
+    years_employed bigint,
+    building text
+);
+
+
+ALTER TABLE public.employees OWNER TO postgres;
+
+--
+-- TOC entry 203 (class 1259 OID 16513)
+-- Name: movie_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movie_info (
+    movie_id bigint,
+    rating double precision,
+    domestic_sales bigint,
+    international_sales bigint
+);
+
+
+ALTER TABLE public.movie_info OWNER TO postgres;
+
+--
+-- TOC entry 202 (class 1259 OID 16507)
+-- Name: movies; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movies (
+    id bigint,
+    title text,
+    director text,
+    year bigint,
+    length_minutes bigint
+);
+
+
+ALTER TABLE public.movies OWNER TO postgres;
+
+--
+-- TOC entry 206 (class 1259 OID 16543)
+-- Name: new_view; Type: VIEW; Schema: public; Owner: postgres
+--
+
+CREATE VIEW public.new_view AS
+ SELECT movies.id
+   FROM public.movies;
+
+
+ALTER TABLE public.new_view OWNER TO postgres;
+
+--
+-- TOC entry 208 (class 1259 OID 16553)
+-- Name: user_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.user_info (
+    username text,
+    password text
+);
+
+
+ALTER TABLE public.user_info OWNER TO postgres;
+
+--
+-- TOC entry 3164 (class 0 OID 16547)
+-- Dependencies: 207
+-- Data for Name: buildings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (1, 'Burj Khalifa', 828);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (2, 'Central Plaza', 374);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (3, 'Gevora Tower', 356);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (4, 'Empire State', 381);
+
+
+--
+-- TOC entry 3162 (class 0 OID 16522)
+-- Dependencies: 204
+-- Data for Name: cities; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Guadalajara', 'Mexico', 1500800, 20.659699, -103.349609);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Toronto', 'Canada', 2795060, 43.653226000000004, -79.383184);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Houston', 'United States', 2195914, 29.760427000000004, -95.369803);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('New York', 'United States', 8405837, 40.712784, -74.005941);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Philadelphia', 'United States', 1553165, 39.952584, -75.165222);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Havana', 'Cuba', 2106146, 23.05407, -82.345189);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Mexico City', 'Mexico', 8555500, 19.432608, -99.133208);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Phoenix', 'United States', 1513367, 33.448377, -112.074037);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Los Angeles', 'United States', 3884307, 34.052234000000006, -118.24368500000001);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Ecatepec de Morelos', 'Mexico', 1742000, 19.601841, -99.050674);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Montreal', 'Canada', 1717767, 45.501689, -73.567256);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Chicago', 'United States', 2718782, 41.878114000000004, -87.629798);
+
+
+--
+-- TOC entry 3163 (class 0 OID 16528)
+-- Dependencies: 205
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Becky A.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan B.', 2, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Sharon F.', 6, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan M.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Malcom S.', 1, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Tylar S.', 2, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Sherman D.', 8, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Jakob J.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Lillia A.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Brandon J.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Scott K.', 9, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Shirlee M.', 3, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Daria O.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Yancy I.', 0, NULL);
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Oliver P.', 0, NULL);
+
+
+--
+-- TOC entry 3161 (class 0 OID 16513)
+-- Dependencies: 203
+-- Data for Name: movie_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (5, 8.2, 380843261, 555900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (14, 7.4, 268492764, 475066843);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (8, 8, 206445654, 417277164);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (12, 6.4, 191452396, 368400000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (3, 7.9, 245852179, 239163000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (6, 8, 261441092, 370001000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (9, 8.5, 223808164, 297503696);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (11, 8.4, 415004880, 648167031);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (1, 8.3, 191796233, 170162503);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (7, 7.2, 244082982, 217900167);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (10, 8.3, 293004164, 438338580);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (4, 8.1, 289916256, 272900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (2, 7.2, 162798565, 200600000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (13, 7.2, 237283207, 301700000);
+
+
+--
+-- TOC entry 3160 (class 0 OID 16507)
+-- Dependencies: 202
+-- Data for Name: movies; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (1, 'Toy Story', 'John Lasseter', 1995, 81);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (2, 'A Bug''s Life', 'John Lasseter', 1998, 95);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (3, 'Toy Story 2', 'John Lasseter', 1999, 93);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (4, 'Monsters, Inc.', 'Pete Docter', 2001, 92);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (5, 'Finding Nemo', 'Andrew Stanton', 2003, 107);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (6, 'The Incredibles', 'Brad Bird', 2004, 116);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (7, 'Cars', 'John Lasseter', 2006, 117);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (8, 'Ratatouille', 'Brad Bird', 2007, 115);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (9, 'WALL-E', 'Andrew Stanton', 2008, 104);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (10, 'Up', 'Pete Docter', 2009, 101);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (11, 'Toy Story 3', 'Lee Unkrich', 2010, 103);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (12, 'Cars 2', 'John Lasseter', 2011, 120);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (13, 'Brave', 'Brenda Chapman', 2012, 102);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (14, 'Monsters University', 'Dan Scanlon', 2013, 110);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (87, 'WALL-G', 'Brenda Chapman', 2042, 97);
+
+
+--
+-- TOC entry 3165 (class 0 OID 16553)
+-- Dependencies: 208
+-- Data for Name: user_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.user_info (username, password) VALUES ('andre', 'admin');
+INSERT INTO public.user_info (username, password) VALUES ('lucas', 'qwerty');
+INSERT INTO public.user_info (username, password) VALUES ('rai', '123456789');
+
+
+-- Completed on 2020-02-26 00:01:49 -03
+
+--
+-- PostgreSQL database dump complete
+--
+
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:23:09</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:23:07">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  --
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.1
+-- Dumped by pg_dump version 12.1
+
+-- Started on 2020-02-26 00:01:49 -03
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3171 (class 1262 OID 16500)
+-- Name: sql_queries; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+--
+-- TOC entry 207 (class 1259 OID 16547)
+-- Name: buildings; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.buildings (
+    building_id bigint,
+    building_name text,
+    height bigint
+);
+
+
+ALTER TABLE public.buildings OWNER TO postgres;
+
+--
+-- TOC entry 204 (class 1259 OID 16522)
+-- Name: cities; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.cities (
+    "City" text,
+    "Country" text,
+    "Population" bigint,
+    "Latitude" double precision,
+    "Longitude" double precision
+);
+
+
+ALTER TABLE public.cities OWNER TO postgres;
+
+--
+-- TOC entry 205 (class 1259 OID 16528)
+-- Name: employees; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.employees (
+    role text,
+    name text,
+    years_employed bigint,
+    building text
+);
+
+
+ALTER TABLE public.employees OWNER TO postgres;
+
+--
+-- TOC entry 203 (class 1259 OID 16513)
+-- Name: movie_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movie_info (
+    movie_id bigint,
+    rating double precision,
+    domestic_sales bigint,
+    international_sales bigint
+);
+
+
+ALTER TABLE public.movie_info OWNER TO postgres;
+
+--
+-- TOC entry 202 (class 1259 OID 16507)
+-- Name: movies; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movies (
+    id bigint,
+    title text,
+    director text,
+    year bigint,
+    length_minutes bigint
+);
+
+
+ALTER TABLE public.movies OWNER TO postgres;
+
+--
+-- TOC entry 206 (class 1259 OID 16543)
+-- Name: new_view; Type: VIEW; Schema: public; Owner: postgres
+--
+
+CREATE VIEW public.new_view AS
+ SELECT movies.id
+   FROM public.movies;
+
+
+ALTER TABLE public.new_view OWNER TO postgres;
+
+--
+-- TOC entry 208 (class 1259 OID 16553)
+-- Name: user_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.user_info (
+    username text,
+    password text
+);
+
+
+ALTER TABLE public.user_info OWNER TO postgres;
+
+--
+-- TOC entry 3164 (class 0 OID 16547)
+-- Dependencies: 207
+-- Data for Name: buildings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (1, 'Burj Khalifa', 828);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (2, 'Central Plaza', 374);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (3, 'Gevora Tower', 356);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (4, 'Empire State', 381);
+
+
+--
+-- TOC entry 3162 (class 0 OID 16522)
+-- Dependencies: 204
+-- Data for Name: cities; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Guadalajara', 'Mexico', 1500800, 20.659699, -103.349609);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Toronto', 'Canada', 2795060, 43.653226000000004, -79.383184);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Houston', 'United States', 2195914, 29.760427000000004, -95.369803);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('New York', 'United States', 8405837, 40.712784, -74.005941);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Philadelphia', 'United States', 1553165, 39.952584, -75.165222);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Havana', 'Cuba', 2106146, 23.05407, -82.345189);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Mexico City', 'Mexico', 8555500, 19.432608, -99.133208);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Phoenix', 'United States', 1513367, 33.448377, -112.074037);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Los Angeles', 'United States', 3884307, 34.052234000000006, -118.24368500000001);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Ecatepec de Morelos', 'Mexico', 1742000, 19.601841, -99.050674);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Montreal', 'Canada', 1717767, 45.501689, -73.567256);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Chicago', 'United States', 2718782, 41.878114000000004, -87.629798);
+
+
+--
+-- TOC entry 3163 (class 0 OID 16528)
+-- Dependencies: 205
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Becky A.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan B.', 2, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Sharon F.', 6, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan M.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Malcom S.', 1, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Tylar S.', 2, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Sherman D.', 8, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Jakob J.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Lillia A.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Brandon J.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Scott K.', 9, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Shirlee M.', 3, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Daria O.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Yancy I.', 0, NULL);
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Oliver P.', 0, NULL);
+
+
+--
+-- TOC entry 3161 (class 0 OID 16513)
+-- Dependencies: 203
+-- Data for Name: movie_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (5, 8.2, 380843261, 555900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (14, 7.4, 268492764, 475066843);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (8, 8, 206445654, 417277164);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (12, 6.4, 191452396, 368400000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (3, 7.9, 245852179, 239163000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (6, 8, 261441092, 370001000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (9, 8.5, 223808164, 297503696);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (11, 8.4, 415004880, 648167031);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (1, 8.3, 191796233, 170162503);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (7, 7.2, 244082982, 217900167);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (10, 8.3, 293004164, 438338580);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (4, 8.1, 289916256, 272900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (2, 7.2, 162798565, 200600000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (13, 7.2, 237283207, 301700000);
+
+
+--
+-- TOC entry 3160 (class 0 OID 16507)
+-- Dependencies: 202
+-- Data for Name: movies; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (1, 'Toy Story', 'John Lasseter', 1995, 81);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (2, 'A Bug''s Life', 'John Lasseter', 1998, 95);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (3, 'Toy Story 2', 'John Lasseter', 1999, 93);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (4, 'Monsters, Inc.', 'Pete Docter', 2001, 92);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (5, 'Finding Nemo', 'Andrew Stanton', 2003, 107);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (6, 'The Incredibles', 'Brad Bird', 2004, 116);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (7, 'Cars', 'John Lasseter', 2006, 117);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (8, 'Ratatouille', 'Brad Bird', 2007, 115);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (9, 'WALL-E', 'Andrew Stanton', 2008, 104);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (10, 'Up', 'Pete Docter', 2009, 101);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (11, 'Toy Story 3', 'Lee Unkrich', 2010, 103);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (12, 'Cars 2', 'John Lasseter', 2011, 120);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (13, 'Brave', 'Brenda Chapman', 2012, 102);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (14, 'Monsters University', 'Dan Scanlon', 2013, 110);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (87, 'WALL-G', 'Brenda Chapman', 2042, 97);
+
+
+--
+-- TOC entry 3165 (class 0 OID 16553)
+-- Dependencies: 208
+-- Data for Name: user_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.user_info (username, password) VALUES ('andre', 'admin');
+INSERT INTO public.user_info (username, password) VALUES ('lucas', 'qwerty');
+INSERT INTO public.user_info (username, password) VALUES ('rai', '123456789');
+
+
+-- Completed on 2020-02-26 00:01:49 -03
+
+--
+-- PostgreSQL database dump complete
+--
+
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:23:07</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:23:07">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  --
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.1
+-- Dumped by pg_dump version 12.1
+
+-- Started on 2020-02-26 00:01:49 -03
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3171 (class 1262 OID 16500)
+-- Name: sql_queries; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+--
+-- TOC entry 207 (class 1259 OID 16547)
+-- Name: buildings; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.buildings (
+    building_id bigint,
+    building_name text,
+    height bigint
+);
+
+
+ALTER TABLE public.buildings OWNER TO postgres;
+
+--
+-- TOC entry 204 (class 1259 OID 16522)
+-- Name: cities; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.cities (
+    "City" text,
+    "Country" text,
+    "Population" bigint,
+    "Latitude" double precision,
+    "Longitude" double precision
+);
+
+
+ALTER TABLE public.cities OWNER TO postgres;
+
+--
+-- TOC entry 205 (class 1259 OID 16528)
+-- Name: employees; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.employees (
+    role text,
+    name text,
+    years_employed bigint,
+    building text
+);
+
+
+ALTER TABLE public.employees OWNER TO postgres;
+
+--
+-- TOC entry 203 (class 1259 OID 16513)
+-- Name: movie_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movie_info (
+    movie_id bigint,
+    rating double precision,
+    domestic_sales bigint,
+    international_sales bigint
+);
+
+
+ALTER TABLE public.movie_info OWNER TO postgres;
+
+--
+-- TOC entry 202 (class 1259 OID 16507)
+-- Name: movies; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movies (
+    id bigint,
+    title text,
+    director text,
+    year bigint,
+    length_minutes bigint
+);
+
+
+ALTER TABLE public.movies OWNER TO postgres;
+
+--
+-- TOC entry 206 (class 1259 OID 16543)
+-- Name: new_view; Type: VIEW; Schema: public; Owner: postgres
+--
+
+CREATE VIEW public.new_view AS
+ SELECT movies.id
+   FROM public.movies;
+
+
+ALTER TABLE public.new_view OWNER TO postgres;
+
+--
+-- TOC entry 208 (class 1259 OID 16553)
+-- Name: user_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.user_info (
+    username text,
+    password text
+);
+
+
+ALTER TABLE public.user_info OWNER TO postgres;
+
+--
+-- TOC entry 3164 (class 0 OID 16547)
+-- Dependencies: 207
+-- Data for Name: buildings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (1, 'Burj Khalifa', 828);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (2, 'Central Plaza', 374);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (3, 'Gevora Tower', 356);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (4, 'Empire State', 381);
+
+
+--
+-- TOC entry 3162 (class 0 OID 16522)
+-- Dependencies: 204
+-- Data for Name: cities; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Guadalajara', 'Mexico', 1500800, 20.659699, -103.349609);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Toronto', 'Canada', 2795060, 43.653226000000004, -79.383184);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Houston', 'United States', 2195914, 29.760427000000004, -95.369803);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('New York', 'United States', 8405837, 40.712784, -74.005941);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Philadelphia', 'United States', 1553165, 39.952584, -75.165222);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Havana', 'Cuba', 2106146, 23.05407, -82.345189);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Mexico City', 'Mexico', 8555500, 19.432608, -99.133208);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Phoenix', 'United States', 1513367, 33.448377, -112.074037);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Los Angeles', 'United States', 3884307, 34.052234000000006, -118.24368500000001);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Ecatepec de Morelos', 'Mexico', 1742000, 19.601841, -99.050674);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Montreal', 'Canada', 1717767, 45.501689, -73.567256);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Chicago', 'United States', 2718782, 41.878114000000004, -87.629798);
+
+
+--
+-- TOC entry 3163 (class 0 OID 16528)
+-- Dependencies: 205
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Becky A.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan B.', 2, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Sharon F.', 6, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan M.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Malcom S.', 1, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Tylar S.', 2, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Sherman D.', 8, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Jakob J.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Lillia A.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Brandon J.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Scott K.', 9, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Shirlee M.', 3, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Daria O.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Yancy I.', 0, NULL);
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Oliver P.', 0, NULL);
+
+
+--
+-- TOC entry 3161 (class 0 OID 16513)
+-- Dependencies: 203
+-- Data for Name: movie_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (5, 8.2, 380843261, 555900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (14, 7.4, 268492764, 475066843);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (8, 8, 206445654, 417277164);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (12, 6.4, 191452396, 368400000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (3, 7.9, 245852179, 239163000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (6, 8, 261441092, 370001000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (9, 8.5, 223808164, 297503696);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (11, 8.4, 415004880, 648167031);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (1, 8.3, 191796233, 170162503);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (7, 7.2, 244082982, 217900167);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (10, 8.3, 293004164, 438338580);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (4, 8.1, 289916256, 272900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (2, 7.2, 162798565, 200600000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (13, 7.2, 237283207, 301700000);
+
+
+--
+-- TOC entry 3160 (class 0 OID 16507)
+-- Dependencies: 202
+-- Data for Name: movies; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (1, 'Toy Story', 'John Lasseter', 1995, 81);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (2, 'A Bug''s Life', 'John Lasseter', 1998, 95);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (3, 'Toy Story 2', 'John Lasseter', 1999, 93);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (4, 'Monsters, Inc.', 'Pete Docter', 2001, 92);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (5, 'Finding Nemo', 'Andrew Stanton', 2003, 107);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (6, 'The Incredibles', 'Brad Bird', 2004, 116);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (7, 'Cars', 'John Lasseter', 2006, 117);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (8, 'Ratatouille', 'Brad Bird', 2007, 115);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (9, 'WALL-E', 'Andrew Stanton', 2008, 104);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (10, 'Up', 'Pete Docter', 2009, 101);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (11, 'Toy Story 3', 'Lee Unkrich', 2010, 103);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (12, 'Cars 2', 'John Lasseter', 2011, 120);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (13, 'Brave', 'Brenda Chapman', 2012, 102);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (14, 'Monsters University', 'Dan Scanlon', 2013, 110);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (87, 'WALL-G', 'Brenda Chapman', 2042, 97);
+
+
+--
+-- TOC entry 3165 (class 0 OID 16553)
+-- Dependencies: 208
+-- Data for Name: user_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.user_info (username, password) VALUES ('andre', 'admin');
+INSERT INTO public.user_info (username, password) VALUES ('lucas', 'qwerty');
+INSERT INTO public.user_info (username, password) VALUES ('rai', '123456789');
+
+
+-- Completed on 2020-02-26 00:01:49 -03
+
+--
+-- PostgreSQL database dump complete
+--
+
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:23:07</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:23:07">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  --
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.1
+-- Dumped by pg_dump version 12.1
+
+-- Started on 2020-02-26 00:01:49 -03
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3171 (class 1262 OID 16500)
+-- Name: sql_queries; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+--
+-- TOC entry 207 (class 1259 OID 16547)
+-- Name: buildings; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.buildings (
+    building_id bigint,
+    building_name text,
+    height bigint
+);
+
+
+ALTER TABLE public.buildings OWNER TO postgres;
+
+--
+-- TOC entry 204 (class 1259 OID 16522)
+-- Name: cities; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.cities (
+    "City" text,
+    "Country" text,
+    "Population" bigint,
+    "Latitude" double precision,
+    "Longitude" double precision
+);
+
+
+ALTER TABLE public.cities OWNER TO postgres;
+
+--
+-- TOC entry 205 (class 1259 OID 16528)
+-- Name: employees; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.employees (
+    role text,
+    name text,
+    years_employed bigint,
+    building text
+);
+
+
+ALTER TABLE public.employees OWNER TO postgres;
+
+--
+-- TOC entry 203 (class 1259 OID 16513)
+-- Name: movie_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movie_info (
+    movie_id bigint,
+    rating double precision,
+    domestic_sales bigint,
+    international_sales bigint
+);
+
+
+ALTER TABLE public.movie_info OWNER TO postgres;
+
+--
+-- TOC entry 202 (class 1259 OID 16507)
+-- Name: movies; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movies (
+    id bigint,
+    title text,
+    director text,
+    year bigint,
+    length_minutes bigint
+);
+
+
+ALTER TABLE public.movies OWNER TO postgres;
+
+--
+-- TOC entry 206 (class 1259 OID 16543)
+-- Name: new_view; Type: VIEW; Schema: public; Owner: postgres
+--
+
+CREATE VIEW public.new_view AS
+ SELECT movies.id
+   FROM public.movies;
+
+
+ALTER TABLE public.new_view OWNER TO postgres;
+
+--
+-- TOC entry 208 (class 1259 OID 16553)
+-- Name: user_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.user_info (
+    username text,
+    password text
+);
+
+
+ALTER TABLE public.user_info OWNER TO postgres;
+
+--
+-- TOC entry 3164 (class 0 OID 16547)
+-- Dependencies: 207
+-- Data for Name: buildings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (1, 'Burj Khalifa', 828);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (2, 'Central Plaza', 374);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (3, 'Gevora Tower', 356);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (4, 'Empire State', 381);
+
+
+--
+-- TOC entry 3162 (class 0 OID 16522)
+-- Dependencies: 204
+-- Data for Name: cities; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Guadalajara', 'Mexico', 1500800, 20.659699, -103.349609);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Toronto', 'Canada', 2795060, 43.653226000000004, -79.383184);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Houston', 'United States', 2195914, 29.760427000000004, -95.369803);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('New York', 'United States', 8405837, 40.712784, -74.005941);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Philadelphia', 'United States', 1553165, 39.952584, -75.165222);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Havana', 'Cuba', 2106146, 23.05407, -82.345189);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Mexico City', 'Mexico', 8555500, 19.432608, -99.133208);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Phoenix', 'United States', 1513367, 33.448377, -112.074037);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Los Angeles', 'United States', 3884307, 34.052234000000006, -118.24368500000001);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Ecatepec de Morelos', 'Mexico', 1742000, 19.601841, -99.050674);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Montreal', 'Canada', 1717767, 45.501689, -73.567256);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Chicago', 'United States', 2718782, 41.878114000000004, -87.629798);
+
+
+--
+-- TOC entry 3163 (class 0 OID 16528)
+-- Dependencies: 205
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Becky A.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan B.', 2, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Sharon F.', 6, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan M.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Malcom S.', 1, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Tylar S.', 2, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Sherman D.', 8, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Jakob J.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Lillia A.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Brandon J.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Scott K.', 9, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Shirlee M.', 3, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Daria O.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Yancy I.', 0, NULL);
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Oliver P.', 0, NULL);
+
+
+--
+-- TOC entry 3161 (class 0 OID 16513)
+-- Dependencies: 203
+-- Data for Name: movie_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (5, 8.2, 380843261, 555900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (14, 7.4, 268492764, 475066843);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (8, 8, 206445654, 417277164);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (12, 6.4, 191452396, 368400000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (3, 7.9, 245852179, 239163000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (6, 8, 261441092, 370001000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (9, 8.5, 223808164, 297503696);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (11, 8.4, 415004880, 648167031);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (1, 8.3, 191796233, 170162503);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (7, 7.2, 244082982, 217900167);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (10, 8.3, 293004164, 438338580);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (4, 8.1, 289916256, 272900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (2, 7.2, 162798565, 200600000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (13, 7.2, 237283207, 301700000);
+
+
+--
+-- TOC entry 3160 (class 0 OID 16507)
+-- Dependencies: 202
+-- Data for Name: movies; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (1, 'Toy Story', 'John Lasseter', 1995, 81);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (2, 'A Bug''s Life', 'John Lasseter', 1998, 95);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (3, 'Toy Story 2', 'John Lasseter', 1999, 93);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (4, 'Monsters, Inc.', 'Pete Docter', 2001, 92);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (5, 'Finding Nemo', 'Andrew Stanton', 2003, 107);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (6, 'The Incredibles', 'Brad Bird', 2004, 116);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (7, 'Cars', 'John Lasseter', 2006, 117);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (8, 'Ratatouille', 'Brad Bird', 2007, 115);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (9, 'WALL-E', 'Andrew Stanton', 2008, 104);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (10, 'Up', 'Pete Docter', 2009, 101);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (11, 'Toy Story 3', 'Lee Unkrich', 2010, 103);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (12, 'Cars 2', 'John Lasseter', 2011, 120);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (13, 'Brave', 'Brenda Chapman', 2012, 102);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (14, 'Monsters University', 'Dan Scanlon', 2013, 110);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (87, 'WALL-G', 'Brenda Chapman', 2042, 97);
+
+
+--
+-- TOC entry 3165 (class 0 OID 16553)
+-- Dependencies: 208
+-- Data for Name: user_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.user_info (username, password) VALUES ('andre', 'admin');
+INSERT INTO public.user_info (username, password) VALUES ('lucas', 'qwerty');
+INSERT INTO public.user_info (username, password) VALUES ('rai', '123456789');
+
+
+-- Completed on 2020-02-26 00:01:49 -03
+
+--
+-- PostgreSQL database dump complete
+--
+
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:23:07</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:23:07">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  --
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.1
+-- Dumped by pg_dump version 12.1
+
+-- Started on 2020-02-26 00:01:49 -03
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3171 (class 1262 OID 16500)
+-- Name: sql_queries; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+--
+-- TOC entry 207 (class 1259 OID 16547)
+-- Name: buildings; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.buildings (
+    building_id bigint,
+    building_name text,
+    height bigint
+);
+
+
+ALTER TABLE public.buildings OWNER TO postgres;
+
+--
+-- TOC entry 204 (class 1259 OID 16522)
+-- Name: cities; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.cities (
+    "City" text,
+    "Country" text,
+    "Population" bigint,
+    "Latitude" double precision,
+    "Longitude" double precision
+);
+
+
+ALTER TABLE public.cities OWNER TO postgres;
+
+--
+-- TOC entry 205 (class 1259 OID 16528)
+-- Name: employees; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.employees (
+    role text,
+    name text,
+    years_employed bigint,
+    building text
+);
+
+
+ALTER TABLE public.employees OWNER TO postgres;
+
+--
+-- TOC entry 203 (class 1259 OID 16513)
+-- Name: movie_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movie_info (
+    movie_id bigint,
+    rating double precision,
+    domestic_sales bigint,
+    international_sales bigint
+);
+
+
+ALTER TABLE public.movie_info OWNER TO postgres;
+
+--
+-- TOC entry 202 (class 1259 OID 16507)
+-- Name: movies; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movies (
+    id bigint,
+    title text,
+    director text,
+    year bigint,
+    length_minutes bigint
+);
+
+
+ALTER TABLE public.movies OWNER TO postgres;
+
+--
+-- TOC entry 206 (class 1259 OID 16543)
+-- Name: new_view; Type: VIEW; Schema: public; Owner: postgres
+--
+
+CREATE VIEW public.new_view AS
+ SELECT movies.id
+   FROM public.movies;
+
+
+ALTER TABLE public.new_view OWNER TO postgres;
+
+--
+-- TOC entry 208 (class 1259 OID 16553)
+-- Name: user_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.user_info (
+    username text,
+    password text
+);
+
+
+ALTER TABLE public.user_info OWNER TO postgres;
+
+--
+-- TOC entry 3164 (class 0 OID 16547)
+-- Dependencies: 207
+-- Data for Name: buildings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (1, 'Burj Khalifa', 828);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (2, 'Central Plaza', 374);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (3, 'Gevora Tower', 356);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (4, 'Empire State', 381);
+
+
+--
+-- TOC entry 3162 (class 0 OID 16522)
+-- Dependencies: 204
+-- Data for Name: cities; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Guadalajara', 'Mexico', 1500800, 20.659699, -103.349609);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Toronto', 'Canada', 2795060, 43.653226000000004, -79.383184);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Houston', 'United States', 2195914, 29.760427000000004, -95.369803);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('New York', 'United States', 8405837, 40.712784, -74.005941);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Philadelphia', 'United States', 1553165, 39.952584, -75.165222);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Havana', 'Cuba', 2106146, 23.05407, -82.345189);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Mexico City', 'Mexico', 8555500, 19.432608, -99.133208);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Phoenix', 'United States', 1513367, 33.448377, -112.074037);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Los Angeles', 'United States', 3884307, 34.052234000000006, -118.24368500000001);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Ecatepec de Morelos', 'Mexico', 1742000, 19.601841, -99.050674);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Montreal', 'Canada', 1717767, 45.501689, -73.567256);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Chicago', 'United States', 2718782, 41.878114000000004, -87.629798);
+
+
+--
+-- TOC entry 3163 (class 0 OID 16528)
+-- Dependencies: 205
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Becky A.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan B.', 2, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Sharon F.', 6, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan M.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Malcom S.', 1, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Tylar S.', 2, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Sherman D.', 8, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Jakob J.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Lillia A.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Brandon J.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Scott K.', 9, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Shirlee M.', 3, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Daria O.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Yancy I.', 0, NULL);
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Oliver P.', 0, NULL);
+
+
+--
+-- TOC entry 3161 (class 0 OID 16513)
+-- Dependencies: 203
+-- Data for Name: movie_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (5, 8.2, 380843261, 555900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (14, 7.4, 268492764, 475066843);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (8, 8, 206445654, 417277164);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (12, 6.4, 191452396, 368400000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (3, 7.9, 245852179, 239163000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (6, 8, 261441092, 370001000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (9, 8.5, 223808164, 297503696);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (11, 8.4, 415004880, 648167031);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (1, 8.3, 191796233, 170162503);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (7, 7.2, 244082982, 217900167);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (10, 8.3, 293004164, 438338580);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (4, 8.1, 289916256, 272900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (2, 7.2, 162798565, 200600000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (13, 7.2, 237283207, 301700000);
+
+
+--
+-- TOC entry 3160 (class 0 OID 16507)
+-- Dependencies: 202
+-- Data for Name: movies; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (1, 'Toy Story', 'John Lasseter', 1995, 81);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (2, 'A Bug''s Life', 'John Lasseter', 1998, 95);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (3, 'Toy Story 2', 'John Lasseter', 1999, 93);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (4, 'Monsters, Inc.', 'Pete Docter', 2001, 92);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (5, 'Finding Nemo', 'Andrew Stanton', 2003, 107);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (6, 'The Incredibles', 'Brad Bird', 2004, 116);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (7, 'Cars', 'John Lasseter', 2006, 117);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (8, 'Ratatouille', 'Brad Bird', 2007, 115);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (9, 'WALL-E', 'Andrew Stanton', 2008, 104);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (10, 'Up', 'Pete Docter', 2009, 101);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (11, 'Toy Story 3', 'Lee Unkrich', 2010, 103);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (12, 'Cars 2', 'John Lasseter', 2011, 120);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (13, 'Brave', 'Brenda Chapman', 2012, 102);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (14, 'Monsters University', 'Dan Scanlon', 2013, 110);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (87, 'WALL-G', 'Brenda Chapman', 2042, 97);
+
+
+--
+-- TOC entry 3165 (class 0 OID 16553)
+-- Dependencies: 208
+-- Data for Name: user_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.user_info (username, password) VALUES ('andre', 'admin');
+INSERT INTO public.user_info (username, password) VALUES ('lucas', 'qwerty');
+INSERT INTO public.user_info (username, password) VALUES ('rai', '123456789');
+
+
+-- Completed on 2020-02-26 00:01:49 -03
+
+--
+-- PostgreSQL database dump complete
+--
+
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:23:07</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:23:06">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  --
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.1
+-- Dumped by pg_dump version 12.1
+
+-- Started on 2020-02-26 00:01:49 -03
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3171 (class 1262 OID 16500)
+-- Name: sql_queries; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+--
+-- TOC entry 207 (class 1259 OID 16547)
+-- Name: buildings; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.buildings (
+    building_id bigint,
+    building_name text,
+    height bigint
+);
+
+
+ALTER TABLE public.buildings OWNER TO postgres;
+
+--
+-- TOC entry 204 (class 1259 OID 16522)
+-- Name: cities; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.cities (
+    "City" text,
+    "Country" text,
+    "Population" bigint,
+    "Latitude" double precision,
+    "Longitude" double precision
+);
+
+
+ALTER TABLE public.cities OWNER TO postgres;
+
+--
+-- TOC entry 205 (class 1259 OID 16528)
+-- Name: employees; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.employees (
+    role text,
+    name text,
+    years_employed bigint,
+    building text
+);
+
+
+ALTER TABLE public.employees OWNER TO postgres;
+
+--
+-- TOC entry 203 (class 1259 OID 16513)
+-- Name: movie_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movie_info (
+    movie_id bigint,
+    rating double precision,
+    domestic_sales bigint,
+    international_sales bigint
+);
+
+
+ALTER TABLE public.movie_info OWNER TO postgres;
+
+--
+-- TOC entry 202 (class 1259 OID 16507)
+-- Name: movies; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movies (
+    id bigint,
+    title text,
+    director text,
+    year bigint,
+    length_minutes bigint
+);
+
+
+ALTER TABLE public.movies OWNER TO postgres;
+
+--
+-- TOC entry 206 (class 1259 OID 16543)
+-- Name: new_view; Type: VIEW; Schema: public; Owner: postgres
+--
+
+CREATE VIEW public.new_view AS
+ SELECT movies.id
+   FROM public.movies;
+
+
+ALTER TABLE public.new_view OWNER TO postgres;
+
+--
+-- TOC entry 208 (class 1259 OID 16553)
+-- Name: user_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.user_info (
+    username text,
+    password text
+);
+
+
+ALTER TABLE public.user_info OWNER TO postgres;
+
+--
+-- TOC entry 3164 (class 0 OID 16547)
+-- Dependencies: 207
+-- Data for Name: buildings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (1, 'Burj Khalifa', 828);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (2, 'Central Plaza', 374);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (3, 'Gevora Tower', 356);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (4, 'Empire State', 381);
+
+
+--
+-- TOC entry 3162 (class 0 OID 16522)
+-- Dependencies: 204
+-- Data for Name: cities; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Guadalajara', 'Mexico', 1500800, 20.659699, -103.349609);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Toronto', 'Canada', 2795060, 43.653226000000004, -79.383184);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Houston', 'United States', 2195914, 29.760427000000004, -95.369803);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('New York', 'United States', 8405837, 40.712784, -74.005941);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Philadelphia', 'United States', 1553165, 39.952584, -75.165222);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Havana', 'Cuba', 2106146, 23.05407, -82.345189);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Mexico City', 'Mexico', 8555500, 19.432608, -99.133208);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Phoenix', 'United States', 1513367, 33.448377, -112.074037);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Los Angeles', 'United States', 3884307, 34.052234000000006, -118.24368500000001);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Ecatepec de Morelos', 'Mexico', 1742000, 19.601841, -99.050674);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Montreal', 'Canada', 1717767, 45.501689, -73.567256);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Chicago', 'United States', 2718782, 41.878114000000004, -87.629798);
+
+
+--
+-- TOC entry 3163 (class 0 OID 16528)
+-- Dependencies: 205
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Becky A.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan B.', 2, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Sharon F.', 6, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan M.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Malcom S.', 1, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Tylar S.', 2, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Sherman D.', 8, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Jakob J.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Lillia A.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Brandon J.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Scott K.', 9, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Shirlee M.', 3, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Daria O.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Yancy I.', 0, NULL);
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Oliver P.', 0, NULL);
+
+
+--
+-- TOC entry 3161 (class 0 OID 16513)
+-- Dependencies: 203
+-- Data for Name: movie_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (5, 8.2, 380843261, 555900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (14, 7.4, 268492764, 475066843);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (8, 8, 206445654, 417277164);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (12, 6.4, 191452396, 368400000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (3, 7.9, 245852179, 239163000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (6, 8, 261441092, 370001000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (9, 8.5, 223808164, 297503696);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (11, 8.4, 415004880, 648167031);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (1, 8.3, 191796233, 170162503);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (7, 7.2, 244082982, 217900167);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (10, 8.3, 293004164, 438338580);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (4, 8.1, 289916256, 272900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (2, 7.2, 162798565, 200600000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (13, 7.2, 237283207, 301700000);
+
+
+--
+-- TOC entry 3160 (class 0 OID 16507)
+-- Dependencies: 202
+-- Data for Name: movies; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (1, 'Toy Story', 'John Lasseter', 1995, 81);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (2, 'A Bug''s Life', 'John Lasseter', 1998, 95);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (3, 'Toy Story 2', 'John Lasseter', 1999, 93);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (4, 'Monsters, Inc.', 'Pete Docter', 2001, 92);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (5, 'Finding Nemo', 'Andrew Stanton', 2003, 107);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (6, 'The Incredibles', 'Brad Bird', 2004, 116);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (7, 'Cars', 'John Lasseter', 2006, 117);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (8, 'Ratatouille', 'Brad Bird', 2007, 115);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (9, 'WALL-E', 'Andrew Stanton', 2008, 104);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (10, 'Up', 'Pete Docter', 2009, 101);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (11, 'Toy Story 3', 'Lee Unkrich', 2010, 103);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (12, 'Cars 2', 'John Lasseter', 2011, 120);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (13, 'Brave', 'Brenda Chapman', 2012, 102);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (14, 'Monsters University', 'Dan Scanlon', 2013, 110);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (87, 'WALL-G', 'Brenda Chapman', 2042, 97);
+
+
+--
+-- TOC entry 3165 (class 0 OID 16553)
+-- Dependencies: 208
+-- Data for Name: user_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.user_info (username, password) VALUES ('andre', 'admin');
+INSERT INTO public.user_info (username, password) VALUES ('lucas', 'qwerty');
+INSERT INTO public.user_info (username, password) VALUES ('rai', '123456789');
+
+
+-- Completed on 2020-02-26 00:01:49 -03
+
+--
+-- PostgreSQL database dump complete
+--
+
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:23:06</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:23:04">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  --
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.1
+-- Dumped by pg_dump version 12.1
+
+-- Started on 2020-02-26 00:01:49 -03
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3171 (class 1262 OID 16500)
+-- Name: sql_queries; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+--
+-- TOC entry 207 (class 1259 OID 16547)
+-- Name: buildings; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.buildings (
+    building_id bigint,
+    building_name text,
+    height bigint
+);
+
+
+ALTER TABLE public.buildings OWNER TO postgres;
+
+--
+-- TOC entry 204 (class 1259 OID 16522)
+-- Name: cities; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.cities (
+    "City" text,
+    "Country" text,
+    "Population" bigint,
+    "Latitude" double precision,
+    "Longitude" double precision
+);
+
+
+ALTER TABLE public.cities OWNER TO postgres;
+
+--
+-- TOC entry 205 (class 1259 OID 16528)
+-- Name: employees; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.employees (
+    role text,
+    name text,
+    years_employed bigint,
+    building text
+);
+
+
+ALTER TABLE public.employees OWNER TO postgres;
+
+--
+-- TOC entry 203 (class 1259 OID 16513)
+-- Name: movie_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movie_info (
+    movie_id bigint,
+    rating double precision,
+    domestic_sales bigint,
+    international_sales bigint
+);
+
+
+ALTER TABLE public.movie_info OWNER TO postgres;
+
+--
+-- TOC entry 202 (class 1259 OID 16507)
+-- Name: movies; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movies (
+    id bigint,
+    title text,
+    director text,
+    year bigint,
+    length_minutes bigint
+);
+
+
+ALTER TABLE public.movies OWNER TO postgres;
+
+--
+-- TOC entry 206 (class 1259 OID 16543)
+-- Name: new_view; Type: VIEW; Schema: public; Owner: postgres
+--
+
+CREATE VIEW public.new_view AS
+ SELECT movies.id
+   FROM public.movies;
+
+
+ALTER TABLE public.new_view OWNER TO postgres;
+
+--
+-- TOC entry 208 (class 1259 OID 16553)
+-- Name: user_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.user_info (
+    username text,
+    password text
+);
+
+
+ALTER TABLE public.user_info OWNER TO postgres;
+
+--
+-- TOC entry 3164 (class 0 OID 16547)
+-- Dependencies: 207
+-- Data for Name: buildings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (1, 'Burj Khalifa', 828);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (2, 'Central Plaza', 374);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (3, 'Gevora Tower', 356);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (4, 'Empire State', 381);
+
+
+--
+-- TOC entry 3162 (class 0 OID 16522)
+-- Dependencies: 204
+-- Data for Name: cities; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Guadalajara', 'Mexico', 1500800, 20.659699, -103.349609);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Toronto', 'Canada', 2795060, 43.653226000000004, -79.383184);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Houston', 'United States', 2195914, 29.760427000000004, -95.369803);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('New York', 'United States', 8405837, 40.712784, -74.005941);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Philadelphia', 'United States', 1553165, 39.952584, -75.165222);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Havana', 'Cuba', 2106146, 23.05407, -82.345189);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Mexico City', 'Mexico', 8555500, 19.432608, -99.133208);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Phoenix', 'United States', 1513367, 33.448377, -112.074037);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Los Angeles', 'United States', 3884307, 34.052234000000006, -118.24368500000001);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Ecatepec de Morelos', 'Mexico', 1742000, 19.601841, -99.050674);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Montreal', 'Canada', 1717767, 45.501689, -73.567256);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Chicago', 'United States', 2718782, 41.878114000000004, -87.629798);
+
+
+--
+-- TOC entry 3163 (class 0 OID 16528)
+-- Dependencies: 205
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Becky A.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan B.', 2, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Sharon F.', 6, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan M.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Malcom S.', 1, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Tylar S.', 2, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Sherman D.', 8, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Jakob J.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Lillia A.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Brandon J.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Scott K.', 9, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Shirlee M.', 3, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Daria O.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Yancy I.', 0, NULL);
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Oliver P.', 0, NULL);
+
+
+--
+-- TOC entry 3161 (class 0 OID 16513)
+-- Dependencies: 203
+-- Data for Name: movie_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (5, 8.2, 380843261, 555900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (14, 7.4, 268492764, 475066843);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (8, 8, 206445654, 417277164);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (12, 6.4, 191452396, 368400000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (3, 7.9, 245852179, 239163000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (6, 8, 261441092, 370001000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (9, 8.5, 223808164, 297503696);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (11, 8.4, 415004880, 648167031);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (1, 8.3, 191796233, 170162503);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (7, 7.2, 244082982, 217900167);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (10, 8.3, 293004164, 438338580);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (4, 8.1, 289916256, 272900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (2, 7.2, 162798565, 200600000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (13, 7.2, 237283207, 301700000);
+
+
+--
+-- TOC entry 3160 (class 0 OID 16507)
+-- Dependencies: 202
+-- Data for Name: movies; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (1, 'Toy Story', 'John Lasseter', 1995, 81);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (2, 'A Bug''s Life', 'John Lasseter', 1998, 95);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (3, 'Toy Story 2', 'John Lasseter', 1999, 93);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (4, 'Monsters, Inc.', 'Pete Docter', 2001, 92);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (5, 'Finding Nemo', 'Andrew Stanton', 2003, 107);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (6, 'The Incredibles', 'Brad Bird', 2004, 116);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (7, 'Cars', 'John Lasseter', 2006, 117);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (8, 'Ratatouille', 'Brad Bird', 2007, 115);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (9, 'WALL-E', 'Andrew Stanton', 2008, 104);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (10, 'Up', 'Pete Docter', 2009, 101);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (11, 'Toy Story 3', 'Lee Unkrich', 2010, 103);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (12, 'Cars 2', 'John Lasseter', 2011, 120);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (13, 'Brave', 'Brenda Chapman', 2012, 102);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (14, 'Monsters University', 'Dan Scanlon', 2013, 110);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (87, 'WALL-G', 'Brenda Chapman', 2042, 97);
+
+
+--
+-- TOC entry 3165 (class 0 OID 16553)
+-- Dependencies: 208
+-- Data for Name: user_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.user_info (username, password) VALUES ('andre', 'admin');
+INSERT INTO public.user_info (username, password) VALUES ('lucas', 'qwerty');
+INSERT INTO public.user_info (username, password) VALUES ('rai', '123456789');
+
+
+-- Completed on 2020-02-26 00:01:49 -03
+
+--
+-- PostgreSQL database dump complete
+--
+
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:23:04</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:23:02">
+          <div class="entry error">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  --
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.1
+-- Dumped by pg_dump version 12.1
+
+-- Started on 2020-02-26 00:01:49 -03
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3171 (class 1262 OID 16500)
+-- Name: sql_queries; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+--
+-- TOC entry 207 (class 1259 OID 16547)
+-- Name: buildings; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.buildings (
+    building_id bigint,
+    building_name text,
+    height bigint
+);
+
+
+ALTER TABLE public.buildings OWNER TO postgres;
+
+--
+-- TOC entry 204 (class 1259 OID 16522)
+-- Name: cities; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.cities (
+    "City" text,
+    "Country" text,
+    "Population" bigint,
+    "Latitude" double precision,
+    "Longitude" double precision
+);
+
+
+ALTER TABLE public.cities OWNER TO postgres;
+
+--
+-- TOC entry 205 (class 1259 OID 16528)
+-- Name: employees; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.employees (
+    role text,
+    name text,
+    years_employed bigint,
+    building text
+);
+
+
+ALTER TABLE public.employees OWNER TO postgres;
+
+--
+-- TOC entry 203 (class 1259 OID 16513)
+-- Name: movie_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movie_info (
+    movie_id bigint,
+    rating double precision,
+    domestic_sales bigint,
+    international_sales bigint
+);
+
+
+ALTER TABLE public.movie_info OWNER TO postgres;
+
+--
+-- TOC entry 202 (class 1259 OID 16507)
+-- Name: movies; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movies (
+    id bigint,
+    title text,
+    director text,
+    year bigint,
+    length_minutes bigint
+);
+
+
+ALTER TABLE public.movies OWNER TO postgres;
+
+--
+-- TOC entry 206 (class 1259 OID 16543)
+-- Name: new_view; Type: VIEW; Schema: public; Owner: postgres
+--
+
+CREATE VIEW public.new_view AS
+ SELECT movies.id
+   FROM public.movies;
+
+
+ALTER TABLE public.new_view OWNER TO postgres;
+
+--
+-- TOC entry 208 (class 1259 OID 16553)
+-- Name: user_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.user_info (
+    username text,
+    password text
+);
+
+
+ALTER TABLE public.user_info OWNER TO postgres;
+
+--
+-- TOC entry 3164 (class 0 OID 16547)
+-- Dependencies: 207
+-- Data for Name: buildings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (1, 'Burj Khalifa', 828);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (2, 'Central Plaza', 374);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (3, 'Gevora Tower', 356);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (4, 'Empire State', 381);
+
+
+--
+-- TOC entry 3162 (class 0 OID 16522)
+-- Dependencies: 204
+-- Data for Name: cities; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Guadalajara', 'Mexico', 1500800, 20.659699, -103.349609);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Toronto', 'Canada', 2795060, 43.653226000000004, -79.383184);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Houston', 'United States', 2195914, 29.760427000000004, -95.369803);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('New York', 'United States', 8405837, 40.712784, -74.005941);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Philadelphia', 'United States', 1553165, 39.952584, -75.165222);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Havana', 'Cuba', 2106146, 23.05407, -82.345189);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Mexico City', 'Mexico', 8555500, 19.432608, -99.133208);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Phoenix', 'United States', 1513367, 33.448377, -112.074037);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Los Angeles', 'United States', 3884307, 34.052234000000006, -118.24368500000001);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Ecatepec de Morelos', 'Mexico', 1742000, 19.601841, -99.050674);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Montreal', 'Canada', 1717767, 45.501689, -73.567256);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Chicago', 'United States', 2718782, 41.878114000000004, -87.629798);
+
+
+--
+-- TOC entry 3163 (class 0 OID 16528)
+-- Dependencies: 205
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Becky A.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan B.', 2, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Sharon F.', 6, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan M.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Malcom S.', 1, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Tylar S.', 2, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Sherman D.', 8, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Jakob J.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Lillia A.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Brandon J.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Scott K.', 9, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Shirlee M.', 3, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Daria O.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Yancy I.', 0, NULL);
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Oliver P.', 0, NULL);
+
+
+--
+-- TOC entry 3161 (class 0 OID 16513)
+-- Dependencies: 203
+-- Data for Name: movie_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (5, 8.2, 380843261, 555900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (14, 7.4, 268492764, 475066843);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (8, 8, 206445654, 417277164);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (12, 6.4, 191452396, 368400000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (3, 7.9, 245852179, 239163000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (6, 8, 261441092, 370001000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (9, 8.5, 223808164, 297503696);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (11, 8.4, 415004880, 648167031);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (1, 8.3, 191796233, 170162503);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (7, 7.2, 244082982, 217900167);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (10, 8.3, 293004164, 438338580);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (4, 8.1, 289916256, 272900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (2, 7.2, 162798565, 200600000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (13, 7.2, 237283207, 301700000);
+
+
+--
+-- TOC entry 3160 (class 0 OID 16507)
+-- Dependencies: 202
+-- Data for Name: movies; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (1, 'Toy Story', 'John Lasseter', 1995, 81);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (2, 'A Bug''s Life', 'John Lasseter', 1998, 95);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (3, 'Toy Story 2', 'John Lasseter', 1999, 93);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (4, 'Monsters, Inc.', 'Pete Docter', 2001, 92);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (5, 'Finding Nemo', 'Andrew Stanton', 2003, 107);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (6, 'The Incredibles', 'Brad Bird', 2004, 116);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (7, 'Cars', 'John Lasseter', 2006, 117);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (8, 'Ratatouille', 'Brad Bird', 2007, 115);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (9, 'WALL-E', 'Andrew Stanton', 2008, 104);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (10, 'Up', 'Pete Docter', 2009, 101);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (11, 'Toy Story 3', 'Lee Unkrich', 2010, 103);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (12, 'Cars 2', 'John Lasseter', 2011, 120);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (13, 'Brave', 'Brenda Chapman', 2012, 102);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (14, 'Monsters University', 'Dan Scanlon', 2013, 110);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (87, 'WALL-G', 'Brenda Chapman', 2042, 97);
+
+
+--
+-- TOC entry 3165 (class 0 OID 16553)
+-- Dependencies: 208
+-- Data for Name: user_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.user_info (username, password) VALUES ('andre', 'admin');
+INSERT INTO public.user_info (username, password) VALUES ('lucas', 'qwerty');
+INSERT INTO public.user_info (username, password) VALUES ('rai', '123456789');
+
+
+-- Completed on 2020-02-26 00:01:49 -03
+
+--
+-- PostgreSQL database dump complete
+--
+
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:23:02</div>
+              </div>
+          </div>
+      </li><li class="list-item" tabindex="0" data-key="14:20:55">
+          <div class="entry ">
+              <div class="query">
+                  <span id="query_source_icon" class="query-history-icon sql-icon-lg icon-view-data" role="img"></span>
+                  --
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 12.1
+-- Dumped by pg_dump version 12.1
+
+-- Started on 2020-02-26 00:01:49 -03
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+--
+-- TOC entry 3171 (class 1262 OID 16500)
+-- Name: sql_queries; Type: DATABASE; Schema: -; Owner: postgres
+--
+
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+--
+-- TOC entry 207 (class 1259 OID 16547)
+-- Name: buildings; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.buildings (
+    building_id bigint,
+    building_name text,
+    height bigint
+);
+
+
+ALTER TABLE public.buildings OWNER TO postgres;
+
+--
+-- TOC entry 204 (class 1259 OID 16522)
+-- Name: cities; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.cities (
+    "City" text,
+    "Country" text,
+    "Population" bigint,
+    "Latitude" double precision,
+    "Longitude" double precision
+);
+
+
+ALTER TABLE public.cities OWNER TO postgres;
+
+--
+-- TOC entry 205 (class 1259 OID 16528)
+-- Name: employees; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.employees (
+    role text,
+    name text,
+    years_employed bigint,
+    building text
+);
+
+
+ALTER TABLE public.employees OWNER TO postgres;
+
+--
+-- TOC entry 203 (class 1259 OID 16513)
+-- Name: movie_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movie_info (
+    movie_id bigint,
+    rating double precision,
+    domestic_sales bigint,
+    international_sales bigint
+);
+
+
+ALTER TABLE public.movie_info OWNER TO postgres;
+
+--
+-- TOC entry 202 (class 1259 OID 16507)
+-- Name: movies; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.movies (
+    id bigint,
+    title text,
+    director text,
+    year bigint,
+    length_minutes bigint
+);
+
+
+ALTER TABLE public.movies OWNER TO postgres;
+
+--
+-- TOC entry 206 (class 1259 OID 16543)
+-- Name: new_view; Type: VIEW; Schema: public; Owner: postgres
+--
+
+CREATE VIEW public.new_view AS
+ SELECT movies.id
+   FROM public.movies;
+
+
+ALTER TABLE public.new_view OWNER TO postgres;
+
+--
+-- TOC entry 208 (class 1259 OID 16553)
+-- Name: user_info; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.user_info (
+    username text,
+    password text
+);
+
+
+ALTER TABLE public.user_info OWNER TO postgres;
+
+--
+-- TOC entry 3164 (class 0 OID 16547)
+-- Dependencies: 207
+-- Data for Name: buildings; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (1, 'Burj Khalifa', 828);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (2, 'Central Plaza', 374);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (3, 'Gevora Tower', 356);
+INSERT INTO public.buildings (building_id, building_name, height) VALUES (4, 'Empire State', 381);
+
+
+--
+-- TOC entry 3162 (class 0 OID 16522)
+-- Dependencies: 204
+-- Data for Name: cities; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Guadalajara', 'Mexico', 1500800, 20.659699, -103.349609);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Toronto', 'Canada', 2795060, 43.653226000000004, -79.383184);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Houston', 'United States', 2195914, 29.760427000000004, -95.369803);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('New York', 'United States', 8405837, 40.712784, -74.005941);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Philadelphia', 'United States', 1553165, 39.952584, -75.165222);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Havana', 'Cuba', 2106146, 23.05407, -82.345189);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Mexico City', 'Mexico', 8555500, 19.432608, -99.133208);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Phoenix', 'United States', 1513367, 33.448377, -112.074037);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Los Angeles', 'United States', 3884307, 34.052234000000006, -118.24368500000001);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Ecatepec de Morelos', 'Mexico', 1742000, 19.601841, -99.050674);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Montreal', 'Canada', 1717767, 45.501689, -73.567256);
+INSERT INTO public.cities ("City", "Country", "Population", "Latitude", "Longitude") VALUES ('Chicago', 'United States', 2718782, 41.878114000000004, -87.629798);
+
+
+--
+-- TOC entry 3163 (class 0 OID 16528)
+-- Dependencies: 205
+-- Data for Name: employees; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Becky A.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan B.', 2, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Sharon F.', 6, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Dan M.', 4, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Malcom S.', 1, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Tylar S.', 2, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Sherman D.', 8, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Jakob J.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Lillia A.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Brandon J.', 7, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Scott K.', 9, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Shirlee M.', 3, 'Burj Khalifa');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Manager', 'Daria O.', 6, 'Empire State');
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Engineer', 'Yancy I.', 0, NULL);
+INSERT INTO public.employees (role, name, years_employed, building) VALUES ('Artist', 'Oliver P.', 0, NULL);
+
+
+--
+-- TOC entry 3161 (class 0 OID 16513)
+-- Dependencies: 203
+-- Data for Name: movie_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (5, 8.2, 380843261, 555900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (14, 7.4, 268492764, 475066843);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (8, 8, 206445654, 417277164);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (12, 6.4, 191452396, 368400000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (3, 7.9, 245852179, 239163000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (6, 8, 261441092, 370001000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (9, 8.5, 223808164, 297503696);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (11, 8.4, 415004880, 648167031);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (1, 8.3, 191796233, 170162503);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (7, 7.2, 244082982, 217900167);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (10, 8.3, 293004164, 438338580);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (4, 8.1, 289916256, 272900000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (2, 7.2, 162798565, 200600000);
+INSERT INTO public.movie_info (movie_id, rating, domestic_sales, international_sales) VALUES (13, 7.2, 237283207, 301700000);
+
+
+--
+-- TOC entry 3160 (class 0 OID 16507)
+-- Dependencies: 202
+-- Data for Name: movies; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (1, 'Toy Story', 'John Lasseter', 1995, 81);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (2, 'A Bug''s Life', 'John Lasseter', 1998, 95);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (3, 'Toy Story 2', 'John Lasseter', 1999, 93);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (4, 'Monsters, Inc.', 'Pete Docter', 2001, 92);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (5, 'Finding Nemo', 'Andrew Stanton', 2003, 107);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (6, 'The Incredibles', 'Brad Bird', 2004, 116);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (7, 'Cars', 'John Lasseter', 2006, 117);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (8, 'Ratatouille', 'Brad Bird', 2007, 115);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (9, 'WALL-E', 'Andrew Stanton', 2008, 104);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (10, 'Up', 'Pete Docter', 2009, 101);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (11, 'Toy Story 3', 'Lee Unkrich', 2010, 103);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (12, 'Cars 2', 'John Lasseter', 2011, 120);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (13, 'Brave', 'Brenda Chapman', 2012, 102);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (14, 'Monsters University', 'Dan Scanlon', 2013, 110);
+INSERT INTO public.movies (id, title, director, year, length_minutes) VALUES (87, 'WALL-G', 'Brenda Chapman', 2042, 97);
+
+
+--
+-- TOC entry 3165 (class 0 OID 16553)
+-- Dependencies: 208
+-- Data for Name: user_info; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+INSERT INTO public.user_info (username, password) VALUES ('andre', 'admin');
+INSERT INTO public.user_info (username, password) VALUES ('lucas', 'qwerty');
+INSERT INTO public.user_info (username, password) VALUES ('rai', '123456789');
+
+
+-- Completed on 2020-02-26 00:01:49 -03
+
+--
+-- PostgreSQL database dump complete
+--
+
+
+              </div>
+              <div class="other-info">
+              <div class="timestamp">14:20:55</div>
+              </div>
+          </div>
+      </li></ul>
+        </div></div>
+        </div></div><div class="gutter gutter-horizontal" style="width: 1px;"></div><div style="width: calc(50% - 0.5px);"><div id="query_detail" class="query-detail">
+            <div class="error-message-block d-none"></div>
+            <div class="info-message-block d-none"></div>
+            <div class="metadata-block"><div class="metadata"><div class="item">
+                  <span class="value">02/09/2020 15:45:43</span>
+                  <span class="description">Date</span>
+              </div><div class="item">
+                  <span class="value">-1</span>
+                  <span class="description">Rows Affected</span>
+              </div><div class="item">
+                  <span class="value">181 msec</span>
+                  <span class="description">Duration</span>
+              </div></div></div>
+            <div class="query-statement-block">
+              <div id="history-detail-query">
+                <button class="btn-copy copy-all" tabindex="0" accesskey="y">Copy</button>
+                <button class="btn-copy-editor copy-to-editor" tabindex="0" accesskey="y">Copy to Query Editor</button>
+                <div><div class="CodeMirror cm-s-default" style="font-size: 1em;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 0px; left: 0px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="-1" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 51px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true" style="display: block; right: 0px; left: 0px;"><div style="height: 100%; min-height: 1px; width: 53px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; min-width: 3px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"></div><div class="CodeMirror-measure"><pre class="CodeMirror-line" role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">DROP</span> <span class="cm-keyword">TABLE</span> <span class="cm-keyword">IF</span> <span class="cm-keyword">EXISTS</span> table_example</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"></div><div class="CodeMirror-code" role="presentation"></div></div></div></div></div><div style="position: absolute; height: 50px; width: 1px; border-bottom: 0px solid transparent;"></div><div class="CodeMirror-gutters" style="display: none;"></div></div></div></div>
+              </div>
+            </div>
+            <div>
+              <hr class="block-divider">
+            </div>
+            <div class="message-block">
+              <div class="message">
+                <div class="message-header">Messages</div>
+                <div class="content"><pre class="content-value">NOTICE:  table "table_example" does not exist, skipping
+DROP TABLE
+
+Query returned successfully in 181 msec.</pre></div>
+              </div>
+            </div>
+        </div></div></div></div></td></tr></tbody></table></div></div></div></div><div class="wcLayoutPane" style="right: 0px; width: 304.75px; top: 0px; bottom: 0px;"><div class="wcFrame wcWide wcTall"><div class="wcFrameTitleBar wcTabTop" style="width: 304.75px;"><div class="wcFrameTitle"><a href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="-1" class="panel-link-heading">Scratch Pad</a></div><div class="wcTabScroller" style="left: 0px;"></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px; right: 24px;"></div></div><div class="wcFrameButtonBar" style="min-width: 24px; width: 24px;"><div class="wcFrameButton" title="Close the currently active panel tab" aria-label="Close panel" tabindex="0" style=""><div class="fa fa-close"></div></div><div class="wcFrameButton" title="Collapse the active panel" style="display: none;"><div class="fa fa-download"></div>C</div></div><div class="wcFrameCenter wcPanelBackground wcScrollableX wcScrollableY" style="left: 0px; right: 0px; bottom: 0px;"><div class="wcPanelTabContent" id="0"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div class="sql-scratch"><textarea wrap="off" tabindex="0"></textarea></div></div></td></tr></tbody></table></div></div></div></div><div class="wcSplitterBar wcTall wcSplitterBarV" style="left: 923.25px; top: 0px; height: 312.75px;"><div class="wcSplitterBarLine"></div></div></div><div class="wcLayoutPane" style="bottom: 0px; height: 306.75px; left: 0px; right: 0px;"><div class="wcFrame wcWide wcTall"><div class="wcFrameTitleBar wcTabTop" style="width: 1232px;"><div class="wcTabScroller" style="left: 0px;"><div class="wcPanelTab" id="0"><div><a href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="-1" class="panel-link-heading">Data Output</a></div></div><div class="wcPanelTab" id="1"><div><a href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="-1" class="panel-link-heading">Explain</a></div></div><div class="wcPanelTab wcPanelTabActive" id="2"><div><a href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="-1" class="panel-link-heading">Messages</a></div></div><div class="wcPanelTab" id="3"><div><a href="http://127.0.0.1:53964/datagrid/panel/899083?is_query_tool=true&amp;sgid=1&amp;sid=1&amp;server_type=pg&amp;did=16393#" tabindex="-1" class="panel-link-heading">Notifications</a></div></div></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px; right: 0px;"></div></div><div class="wcFrameButtonBar" style="min-width: 0px; width: 0px;"><div class="wcFrameButton" title="Close the currently active panel tab" aria-label="Close panel" tabindex="0" style="display: none;"><div class="fa fa-close"></div></div><div class="wcFrameButton" title="Collapse the active panel" style="display: none;"><div class="fa fa-download"></div>C</div></div><div class="wcFrameCenter wcPanelBackground wcScrollableX wcScrollableY" style="left: 0px; right: 0px; bottom: 0px;"><div class="wcPanelTabContent wcPanelTabContentHidden" id="0"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content hide-vertical-scrollbar"><div id="datagrid" class="sql-editor-grid-container text-12 ui-widget slickgrid_729438" tabindex="0" style="height: 288.55px; overflow: hidden; outline: 0px; position: relative;"><div tabindex="0" hidefocus="" style="position:fixed;width:0;height:0;top:0;left:0;outline:0;"></div><div class="slick-header ui-state-default"><div class="slick-header-columns" style="left: -1000px; width: 2232px;" unselectable="on"><div class="ui-state-default slick-header-column" id="slickgrid_729438row-header-column" title="" style="width: 23px;"><span class="slick-column-name"><span data-id="select-all" title="Select/Deselect All"><br><img class="select-all-icon" src="./select-all-icon.png"></span></span><div class="slick-resizable-handle"></div></div><div class="ui-state-default slick-header-column" id="slickgrid_729438nome" title="Read-only column" style="width: 164px;"><div class="slick-header-button editable-column-header-icon"><i class="fa fa-lock"></i></div><span class="slick-column-name"><span data-cell-type="column-header-row" data-test="output-column-header" data-column-id="nome">  <span class="column-description">    <span class="column-name">nome</span>    <span class="column-type">character varying (50)</span>  </span></span></span><div class="slick-resizable-handle"></div></div><div class="ui-state-default slick-header-column" id="slickgrid_729438nota" title="Read-only column" style="width: 78px;"><div class="slick-header-button editable-column-header-icon"><i class="fa fa-lock"></i></div><span class="slick-column-name"><span data-cell-type="column-header-row" data-test="output-column-header" data-column-id="nota">  <span class="column-description">    <span class="column-name">nota</span>    <span class="column-type">smallint</span>  </span></span></span><div class="slick-resizable-handle"></div></div></div></div><div class="slick-headerrow ui-state-default" style="display: none;"><div class="slick-headerrow-columns" style="width: 286px;"></div><div style="display: block; height: 1px; position: absolute; top: 0px; left: 0px; width: 286px;"></div></div><div class="slick-top-panel-scroller ui-state-default" style="display: none;"><div class="slick-top-panel" style="width:10000px"></div></div><div class="slick-viewport" style="width: 100%; overflow: auto; outline: 0px; position: relative; height: 248.55px;"><div class="grid-canvas" style="height: 232.55px; width: 286px;"></div></div><div tabindex="0" hidefocus="" style="position:fixed;width:0;height:0;top:0;left:0;outline:0;"></div></div></div></td></tr></tbody></table></div><div class="wcPanelTabContent wcPanelTabContentHidden" id="1"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div class="sql-editor-explain" tabindex="0"></div></div></td></tr></tbody></table></div><div class="wcPanelTabContent" id="2"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div role="status" class="sql-editor-message" tabindex="0">NOTICE:  table "table_example" does not exist, skipping
+DROP TABLE
+
+Query returned successfully in 181 msec.</div></div></td></tr></tbody></table></div><div class="wcPanelTabContent wcPanelTabContentHidden" id="3"><table class="wcLayout wcWide wcTall"><tbody><tr><td><div class="pg-panel-content"><div id="notification_grid" class="sql-editor-notifications" tabindex="0"><table class="backgrid presentation table table-bordered table-hover table-noouter-border table-bottom-border" role="table"><thead><tr><th class="sortable renderable recorded_time" role="columnheader"><button>Recorded time<span class="sort-caret" aria-hidden="true"></span></button></th><th class="sortable renderable channel" role="columnheader"><button>Event<span class="sort-caret" aria-hidden="true"></span></button></th><th class="sortable renderable pid" role="columnheader"><button>Process ID<span class="sort-caret" aria-hidden="true"></span></button></th><th class="sortable renderable payload" role="columnheader"><button>Payload<span class="sort-caret" aria-hidden="true"></span></button></th></tr></thead><tbody><tr class="empty"><td colspan="4"><span>No data found</span></td></tr></tbody></table></div></div></td></tr></tbody></table></div></div></div></div><div class="wcSplitterBar wcWide wcSplitterBarH" style="top: 309.75px; left: 0px;"><div class="wcSplitterBarLine"></div></div></div></div>
+    </div>
+</div>
+<script>
+            require(['sources/generated/browser_nodes', 'sources/generated/codemirror', 'sources/generated/slickgrid'], function() {
+    require(['sources/generated/sqleditor'], function(ctx) {
+        var $ = pgAdmin.SqlEditor.jquery,
+            S = pgAdmin.SqlEditor.S,
+            editorPanel = $('.sql-editor'),
+            loadingDiv = $('#fetching_data'),
+            msgDiv = loadingDiv.find('.sql-editor-busy-text');
+
+        // Register unload event on window close.
+        /* If opened in new tab, close the connection only on tab/window close and
+         * not on refresh attempt because the user may cancel the reload
+         */
+        if(window.opener) {
+          $(window).on('unload', function(ev) {
+            $.ajax({
+              method: 'DELETE',
+              url: "/datagrid/" + "close/" + 899083
+            });
+          });
+        } else {
+          $(window).on('beforeunload', function(ev) {
+            $.ajax({
+              method: 'DELETE',
+              url: "/datagrid/" + "close/" + 899083
+            });
+          });
+        }
+
+        // Get the controller object from pgAdmin.SqlEditor
+        var sqlEditorController = pgAdmin.SqlEditor.create(editorPanel);
+
+        // Listen on events to show/hide loading-icon and change messages.
+        sqlEditorController.on('pgadmin-sqleditor:loading-icon:message', function(msg) {
+            msgDiv.text(msg);
+          }).on('pgadmin-sqleditor:loading-icon:show', function(msg) {
+            loadingDiv.removeClass('d-none');
+            msgDiv.text(msg);
+          }).on('pgadmin-sqleditor:loading-icon:hide', function() {
+            loadingDiv.addClass('d-none');
+          });
+                    var script_type_url = '';
+                // Start the query tool.
+        sqlEditorController.start(
+            899083,
+            {"is_query_tool": "true", "sgid": "1", "sid": "1", "server_type": "pg", "did": "16393", "title": "dataft_202008/postgres@PostgreSQL 12"},
+            '{"floating":[],"root":{"type":"wcSplitter","horizontal":false,"isDrawer":false,"pane0":{"type":"wcSplitter","horizontal":true,"isDrawer":false,"pane0":{"type":"wcFrame","floating":false,"isFocus":false,"tabOrientation":"top","pos":{"x":0.5,"y":0.5},"size":{"x":924,"y":215.853},"tab":0,"panels":[{"type":"wcPanel","panelType":"sql_panel","size":{"x":924,"y":215.853},"customData":{}},{"type":"wcPanel","panelType":"history","size":{"x":1232,"y":215.853},"customData":{}}]},"pane1":{"type":"wcFrame","floating":false,"isFocus":false,"tabOrientation":"top","pos":{"x":0.5,"y":0.5},"size":{"x":308,"y":215.853},"tab":0,"panels":[{"type":"wcPanel","panelType":"scratch","size":{"x":308,"y":215.853},"customData":{}}]},"pos":0.75},"pane1":{"type":"wcFrame","floating":false,"isFocus":false,"tabOrientation":"top","pos":{"x":0.5,"y":0.5},"size":{"x":1232,"y":654.1},"tab":2,"panels":[{"type":"wcPanel","panelType":"data_output","size":{"x":1232,"y":654.1},"customData":{}},{"type":"wcPanel","panelType":"explain","size":{"x":1232,"y":654.1},"customData":{}},{"type":"wcPanel","panelType":"messages","size":{"x":1232,"y":654.1},"customData":{}},{"type":"wcPanel","panelType":"notifications","size":{"x":1232,"y":654.1},"customData":{}}]},"pos":0.5}}'
+        );
+
+        // If opening from schema diff, set the generated script to the SQL Editor
+
+        var schema_ddl_diff = (window.opener !== null) ? window.opener.pgAdmin.ddl_diff : (window.parent !== null) ? window.parent.pgAdmin.ddl_diff : window.top.pgAdmin.ddl_diff;
+        sqlEditorController.set_value_to_editor(schema_ddl_diff);
+        if (window.opener !== null) window.opener.pgAdmin.ddl_diff = '';
+        else if (window.parent !== null) window.parent.pgAdmin.ddl_diff = '';
+        else if (window.top !== null) window.top.pgAdmin.ddl_diff = '';
+
+    });
+});
+
+</script>
+
+
+<div class="alertify ajs-hidden  ajs-movable ajs-pinnable ajs-zoom"><div class="ajs-dimmer"></div><div class="ajs-modal" tabindex="0"><div class="ajs-dialog" tabindex="0"><button class="ajs-reset" aria-label="reset"></button><div class="ajs-commands"><button class="ajs-pin" aria-label="Pin"></button><button class="ajs-maximize" aria-label="Maximize" tabindex="0"></button><button class="ajs-close" aria-label="Close"></button></div><div class="ajs-header">AlertifyJS</div><div class="ajs-body"><div class="ajs-content"></div></div><div class="ajs-footer"><div class="ajs-auxiliary ajs-buttons"></div><div class="ajs-primary ajs-buttons"><button class="ajs-button btn btn-secondary fa fa-lg fa-times pg-alertify-button">Cancel</button><button class="ajs-button btn btn-primary fa fa-lg fa-check pg-alertify-button">OK</button></div></div><div class="ajs-handle"></div><button class="ajs-reset" aria-label="reset"></button></div></div></div><div class="alertify ajs-hidden  ajs-movable ajs-pinnable ajs-zoom"><div class="ajs-dimmer"></div><div class="ajs-modal" tabindex="0"><div class="ajs-dialog" tabindex="0"><button class="ajs-reset" aria-label="reset"></button><div class="ajs-commands"><button class="ajs-pin" aria-label="Pin"></button><button class="ajs-maximize" aria-label="Maximize" tabindex="0"></button><button class="ajs-close" aria-label="Close"></button></div><div class="ajs-header">AlertifyJS</div><div class="ajs-body"><div class="ajs-content"><p></p><label for="alertify-prompt-0" style="display: none;">HiddenLabel</label><input class="form-control" type="text" id="alertify-prompt-0" wtx-context="09F38CB5-FF30-4AE1-85BD-D46AF7245771"></div></div><div class="ajs-footer"><div class="ajs-auxiliary ajs-buttons"></div><div class="ajs-primary ajs-buttons"><button class="ajs-button btn btn-secondary fa fa-lg fa-times pg-alertify-button">Cancel</button><button class="ajs-button btn btn-primary fa fa-lg fa-check pg-alertify-button">OK</button></div></div><div class="ajs-handle"></div><button class="ajs-reset" aria-label="reset"></button></div></div></div><div class="alertify ajs-hidden  ajs-movable ajs-pinnable ajs-zoom"><div class="ajs-dimmer"></div><div class="ajs-modal" tabindex="0"><div class="ajs-dialog" tabindex="0"><button class="ajs-reset" aria-label="reset"></button><div class="ajs-commands"><button class="ajs-pin" aria-label="Pin"></button><button class="ajs-maximize" aria-label="Maximize" tabindex="0"></button><button class="ajs-close" aria-label="Close"></button></div><div class="ajs-header">AlertifyJS</div><div class="ajs-body"><div class="ajs-content"></div></div><div class="ajs-footer"><div class="ajs-auxiliary ajs-buttons"></div><div class="ajs-primary ajs-buttons"><button class="ajs-button btn btn-primary fa fa-lg fa-check pg-alertify-button">OK</button></div></div><div class="ajs-handle"></div><button class="ajs-reset" aria-label="reset"></button></div></div></div><div class="alertify-notifier ajs-bottom ajs-right"></div></body></html>
