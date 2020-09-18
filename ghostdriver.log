@@ -1,0 +1,870 @@
+[INFO  - 2020-09-14T14:32:38.272Z] GhostDriver - Main - running on port 51949
+[INFO  - 2020-09-14T14:32:42.640Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-09-14T14:32:42.640Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.customHeaders:  - {}
+[INFO  - 2020-09-14T14:32:42.640Z] Session [26013790-f697-11ea-9604-ebc62a965670] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-09-14T14:32:42.640Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 26013790-f697-11ea-9604-ebc62a965670
+[ERROR - 2020-09-14T14:32:43.859Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:43.859Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/pagseguro-nao-resolve-meu-problema_wrTY37vhGyj-vIdB/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:44.227Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:44.227Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:46.727Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093966671
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:47.054Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:47.055Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/compra-nao-autorizada_UiVXGCJcp137MIPN/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:47.796Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:47.796Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:49.166Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093969111
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:49.565Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:49.565Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/venda-avista-bloqueada_BvoAc-DYUvN2-pGT/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:49.878Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:49.878Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:51.432Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093971374
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:51.831Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:51.831Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/cobranca-indevida__Qj4UILST5sWXzpg/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:52.233Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:52.233Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:53.854Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093973805
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:54.397Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:54.398Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/pagamento-bloqueado_43qWJCVSNuDDAUAJ/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:54.661Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:54.661Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:56.448Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093976403
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:56.835Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:56.835Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/nao-estornaram-valor-do-auxiilio_OZ0asebDIXIxCrG_/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:58.142Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:32:58.142Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:00.152Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093980092
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:00.644Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:00.644Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/maquina-nao-funciona_uc2JffS3aozSN7Mf/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:01.269Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:01.269Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:02.967Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093982911
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:03.323Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:03.324Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/pagseguro-fala-uma-coisa-e-faz-outra-link-de-pagamento-nao-recebe-em-2-dia_zgByiLbYOa1BZF5h/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:03.615Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:03.615Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:05.587Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093985538
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:05.957Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:05.957Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/pagseguro-e-cartoes-alelo-refeicao_qDj4CN3tbtPTC3EK/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:06.246Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:06.246Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:08.607Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093988546
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:09.084Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:09.084Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/cancelamento-de-compra_VUMsHgh1WbPHpI7r/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:10.310Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:10.311Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:11.776Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093991718
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:12.149Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:12.149Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/contestacao-de-saldo-bloqueado_Unw5UQzzOyAfNzdh/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:12.584Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:12.584Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:14.259Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093994199
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:14.746Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:14.747Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/demora-para-analisar-pagamento_LpWIum4s6jtC2_hx/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:15.340Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:15.340Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:17.340Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600093997281
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:17.840Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:17.840Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/boleto-pago-nao-repassado-para-a-financeira_EQdzTq3q87Ir2Mun/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:18.384Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:18.384Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:20.337Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600094000281
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:20.843Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:20.843Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/empresa-nao-informou-prazo-previamente_Z1s2GH_b8alIQmqO/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:21.164Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:21.165Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:23.276Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600094003225
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:23.678Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:23.678Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/cartao-pagbank-nao-pode-ser-entregue_7SqlMgewExRHdu8L/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:23.978Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:23.978Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:26.526Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1600094006478
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:26.940Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: ReferenceError: Can't find variable: googletag
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:26.941Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  global code (https://www.reclameaqui.com.br/pagseguro/erro-na-ativacao_Tb79VYeRvVaaZecu/:1)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:27.426Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - msg: Error: [$injector:modulerr] Failed to instantiate module rawebApp due to:
+[$injector:nomod] Module 'rawebApp' is not available! You either misspelled the module name or forgot to load it. If registering a module ensure that you specify the dependencies as the second argument.
+http://errors.angularjs.org/1.5.11/$injector/nomod?p0=rawebApp
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:3859
+c@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:1014
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:2292
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10656
+d@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:46037
+m@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:10503
+eb@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4:12436
+f@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53687
+fa@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53999
+ea@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3:53243
+https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9:1934
+j@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:7120
+fireWith@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:14836
+ready@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2:9706
+g@https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1:2636
+http://errors.angularjs.org/1.5.11/$injector/modulerr?p0=rawebApp&p1=%5B%24injector%3Anomod%5D%20Module%20'rawebApp'%20is%20not%20available!%20You%20either%20misspelled%20the%20module%20name%20or%20forgot%20to%20load%20it.%20If%20registering%20a%20module%20ensure%20that%20you%20specify%20the%20dependencies%20as%20the%20second%20argument.%0Ahttp%3A%2F%2Ferrors.angularjs.org%2F1.5.11%2F%24injector%2Fnomod%3Fp0%3DrawebApp%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A3859%0Ac%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A1014%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A2292%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10656%0Ad%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A46037%0Am%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A10503%0Aeb%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A4%3A12436%0Af%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53687%0Afa%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53999%0Aea%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A3%3A53243%0Ahttps%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A9%3A1934%0Aj%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A7120%0AfireWith%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A14836%0Aready%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A2%3A9706%0Ag%40https%3A%2F%2Fwww.reclameaqui.com.br%2Fscripts%2Fvendor.d86d2146.js%3A1%3A2636
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-09-14T14:33:27.426Z] Session [26013790-f697-11ea-9604-ebc62a965670] - page.onError - stack:
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  d (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  m (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  eb (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:4)
+  f (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  fa (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  ea (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:3)
+  (anonymous function) (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:9)
+  j (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  fireWith (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  ready (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:2)
+  g (https://www.reclameaqui.com.br/scripts/vendor.d86d2146.js:1)
+
+  phantomjs://platform/console++.js:263 in error
+[INFO  - 2020-09-14T14:37:38.276Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T14:42:38.276Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T14:47:38.277Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T14:52:38.277Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T14:57:38.277Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:02:38.277Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:07:38.278Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:12:38.279Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:17:38.279Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:22:38.280Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:27:38.281Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:32:38.281Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:37:38.281Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:42:38.281Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:47:38.282Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:52:38.282Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T15:57:38.282Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:02:38.282Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:07:38.282Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:12:38.283Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:17:38.283Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:22:38.292Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:27:38.295Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:32:38.296Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:37:38.304Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:42:38.303Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:47:38.304Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:52:38.305Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T16:57:38.305Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:02:38.305Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:07:38.305Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:12:38.308Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:17:38.313Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:22:38.308Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:27:38.310Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:32:38.316Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:37:38.322Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:42:38.335Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:47:38.336Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:52:38.346Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T17:57:38.354Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:02:38.355Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:07:38.356Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:12:38.356Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:17:38.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:22:38.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:27:38.358Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:32:38.358Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:37:38.357Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:42:38.358Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:47:38.359Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:52:38.359Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T18:57:38.359Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:02:38.359Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:07:38.360Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:12:38.360Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:17:38.360Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:22:38.361Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:27:38.363Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:32:38.364Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:37:38.365Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:42:38.367Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:47:38.367Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:52:38.367Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T19:57:38.368Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:02:38.371Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:07:38.372Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:12:38.374Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:17:38.374Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:22:38.375Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:27:38.375Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:32:38.377Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:37:38.377Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:42:38.380Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:47:38.390Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:52:38.386Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T20:57:38.388Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:02:38.402Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:07:38.397Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:12:38.406Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:17:38.421Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:22:38.419Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:27:38.420Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:32:38.412Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:37:38.413Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:42:38.414Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:47:38.424Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:52:38.426Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T21:57:38.428Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:02:38.434Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:07:38.434Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:12:38.435Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:17:38.440Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:22:38.461Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:27:38.458Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:32:38.490Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:37:38.502Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:42:38.506Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:47:38.508Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:52:38.533Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T22:57:38.557Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:02:38.592Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:07:38.622Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:12:38.624Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:17:38.698Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:22:38.726Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:27:38.733Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:32:38.777Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:37:38.795Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:42:38.795Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:47:38.793Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:52:38.793Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-14T23:57:38.794Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:02:38.811Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:07:38.804Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:12:38.804Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:17:38.808Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:22:38.812Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:27:38.812Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:32:38.842Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:37:38.862Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:42:38.863Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:47:38.868Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:52:38.877Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T00:57:38.877Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T01:02:38.887Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T01:07:38.887Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T01:12:38.887Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T01:17:38.887Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T01:22:38.888Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T01:27:38.888Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2020-09-15T01:32:38.888Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
